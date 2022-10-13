@@ -1,0 +1,215 @@
+<!-- Début du code -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Dimension plusieurs support -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/style.css" type="text/css">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 992px)" href="css/tablette.css"
+        type="text/css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css" type="text/css">
+
+    <!-- Fontawesome-->
+
+    <script src="https://kit.fontawesome.com/e3d6ec628d.js" crossorigin="anonymous"></script>
+
+    <!-- Police -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"
+        type="text/css">
+
+    <!--Fichiers css-->
+
+    <link rel="stylesheet" href="css/styles.scss" type="text/scss">
+    <link rel="stylesheet" href="css/mobile.scss" type="text/scss">
+
+    <!-- Titre -->
+
+    <title>Ohmyfood</title>
+
+</head>
+
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <nav>
+
+            <div id="title-banner">
+                <div id="arrow">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </div>
+
+                <!-- Logo -->
+
+                <div id="logo">
+                    <img src="images/logo/ohmyfood.png" alt="logo Ohmyfood">
+                </div>
+                <div id="image">
+                    <img src="images/restaurants/française.jpg" alt="À la française">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Principal -->
+
+        <section>
+            <div id="title">
+                <h1>À la française</h1>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div id="starters">
+                <div class="starters-card">
+                    <h4>Entrées</h4>
+                    <a href="tartare">
+                        <div class="card-text">
+                            <p>Tartare de poulpe acidulé</p><br />
+                            <p>Aux zests d'orange</p><br />
+                            <div class="price-card">
+                                <p>25€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="velouté">
+                        <div class="card-text">
+                            <p>Velouté de légumes d'antan</p><br />
+                            <p>Carottes, panais, topinambour</p><br />
+                            <div class="price-card">
+                                <p>35€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="soupe">
+                        <div class="card-text">
+                            <p>Soupe à l'oignon</p><br />
+                            <p>Revisitée</p><br />
+                            <div class="price-card">
+                                <p>20€</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        </section>
+
+        <section>
+            <div id="dishes">
+                <div class="dishes-card">
+                    <h4>Plats</h4>
+                    <a href="coquilles">
+                        <div class="card-text">
+                            <p>Coquilles Saint-Jacques</p><br />
+                            <p>Accompagnées d'une purée de panais</p><br />
+                            <div class="price-card">
+                                <p>40€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="magret">
+                        <div class="card-text">
+                            <p>Magret de canard</p><br />
+                            <p>Et parmentier de pommes de terre</p><br />
+                            <div class="price-card">
+                                <p>35€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="pigeonneau">
+                        <div class="card-text">
+                            <p>Pigeonneau d’Ille-et-Vilaine</p><br />
+                            <p>Sur son lit de gnocchis aux légumes</p><br />
+                            <div class="price-card">
+                                <p>44€</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="desserts">
+                <div class="desserts-card">
+                    <h4>Desserts</h4>
+                    <a href="pétales">
+                        <div class="card-text">
+                            <p>Pétales de violettes glacés</p><br />
+                            <p>Et purée de noisettes</p><br />
+                            <div class="price-card">
+                                <p>18€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="fondant">
+                        <div class="card-text">
+                            <p>Fondant au chocolat</p><br />
+                            <p>Revisité</p><br />
+                            <div class="price-card">
+                                <p>22€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="millefeuille">
+                        <div class="card-text">
+                            <p>Millefeuille croustillant</p><br />
+                            <p>Myrtilles et pâte d’amande</p><br />
+                            <div class="price-card">
+                                <p>23€</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="order-button">
+                <input type="submit" value="Commander">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pied de page -->
+        <div id="footer">
+            <div class="titre">
+                <h2>ohmyfood</h2>
+
+                <div class="bulleted-list">
+                    <ul>
+                        <a href="propose_a_restaurant">
+                            <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
+                        </a>
+
+                        <a href="partner">
+                            <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
+                        </a>
+
+                        <a href="notice">
+                            <li>Mentions légales</li>
+                        </a>
+
+                        <a href="contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

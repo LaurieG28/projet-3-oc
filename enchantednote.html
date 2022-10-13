@@ -1,0 +1,226 @@
+<!-- Début du code -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Dimension plusieurs support -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/style.css" type="text/css">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 992px)" href="css/tablette.css"
+        type="text/css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css" type="text/css">
+
+    <!-- Fontawesome-->
+
+    <script src="https://kit.fontawesome.com/e3d6ec628d.js" crossorigin="anonymous"></script>
+
+    <!-- Police -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"
+        type="text/css">
+
+    <!--Fichiers css-->
+
+    <link rel="stylesheet" href="css/styles.scss" type="text/scss">
+    <link rel="stylesheet" href="css/mobile.scss" type="text/scss">
+
+    <!-- Titre -->
+
+    <title>Ohmyfood</title>
+
+</head>
+
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <nav>
+
+            <div id="title-banner">
+                <div id="arrow">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </div>
+
+                <!-- Logo -->
+
+                <div id="logo">
+                    <img src="images/logo/ohmyfood.png" alt="logo Ohmyfood">
+                </div>
+                <div id="image">
+                    <img src="images/restaurants/lanote.jpg" alt="La note enchantée">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Principal -->
+
+        <section>
+            <div id="title">
+                <h1>La note enchantée</h1>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div id="starters">
+                <div class="starters-card">
+                    <h4>Entrées</h4>
+                    <a href="ravioles">
+                        <div class="card-text">
+                            <p>Ravioles de foie gras</p><br />
+                            <p>Accompagnés de leur crème à la truffeAux zests d'orange</p><br />
+                            <div class="price-card">
+                                <p>25€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="caviar">
+                        <div class="card-text">
+                            <p>Caviar osciètre</p><br />
+                            <p>Sur blini à la farine de blé noir</p><br />
+                            <div class="price-card">
+                                <p>35€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="homard">
+                        <div class="card-text">
+                            <p>Homard et espuma de potiron</p><br />
+                            <p>Mariné aux zestes d'orange</p><br />
+                            <div class="price-card">
+                                <p>20€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="foie">
+                        <div class="card-text">
+                            <p>Foie gras de canard cuit entier</p><br />
+                            <p>Confiture de figue et pain toasté</p><br />
+                            <div class="price-card">
+                                <p>35€</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="dishes">
+                <div class="dishes-card">
+                    <h4>Plats</h4>
+                    <a href="noix">
+                        <div class="card-text">
+                            <p>Noix de coquilles Saint-Jacques</p><br />
+                            <p>Sur lit de purée de céleri-rave</p><br />
+                            <div class="price-card">
+                                <p>40€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="langoustine">
+                        <div class="card-text">
+                            <p>Langoustine poêlée</p><br />
+                            <p>Purée de patate douce</p><br />
+                            <div class="price-card">
+                                <p>35€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="mijoté">
+                        <div class="card-text">
+                            <p>Mijoté de queue de boeuf</p><br />
+                            <p>Et riz sauvage aux zestes de citron</p><br />
+                            <div class="price-card">
+                                <p>44€</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="desserts">
+                <div class="desserts-card">
+                    <h4>Desserts</h4>
+                    <a href="macaron">
+                        <div class="card-text">
+                            <p>Macaron noisette et chocolat</p><br />
+                            <p>Glace au caramel brun et sel de Guérande</p><br />
+                            <div class="price-card">
+                                <p>18€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="baba">
+                        <div class="card-text">
+                            <p>Baba au rhum revisité</p><br />
+                            <p>Avec son coulis de citron</p><br />
+                            <div class="price-card">
+                                <p>22€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="millefeuille">
+                        <div class="card-text">
+                            <p>Tarte au citron meringuée</p><br />
+                            <p>Déstructurée</p><br />
+                            <div class="price-card">
+                                <p>23€</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="order-button">
+                <input type="submit" value="Commander">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pied de page -->
+        <div id="footer">
+            <div class="titre">
+                <h2>ohmyfood</h2>
+
+                <div class="bulleted-list">
+                    <ul>
+                        <a href="propose_a_restaurant">
+                            <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
+                        </a>
+
+                        <a href="partner">
+                            <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
+                        </a>
+
+                        <a href="notice">
+                            <li>Mentions légales</li>
+                        </a>
+
+                        <a href="contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

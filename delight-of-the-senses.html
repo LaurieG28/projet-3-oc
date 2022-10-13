@@ -1,0 +1,216 @@
+<!-- Début du code -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Dimension plusieurs support -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/style.css" type="text/css">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 992px)" href="css/tablette.css"
+        type="text/css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css" type="text/css">
+
+    <!-- Fontawesome-->
+
+    <script src="https://kit.fontawesome.com/e3d6ec628d.js" crossorigin="anonymous"></script>
+
+    <!-- Police -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"
+        type="text/css">
+
+    <!--Fichiers css-->
+
+    <link rel="stylesheet" href="css/styles.scss" type="text/scss">
+    <link rel="stylesheet" href="css/mobile.scss" type="text/scss">
+
+    <!-- Titre -->
+
+    <title>Ohmyfood</title>
+
+</head>
+
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <nav>
+
+            <div id="title-banner">
+                <div id="arrow">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </div>
+
+                <!-- Logo -->
+
+                <div id="logo">
+                    <img src="images/logo/ohmyfood.png" alt="logo Ohmyfood">
+                </div>
+                <div id="image">
+                    <img src="images/restaurants/ledélice.jpg" alt="Le délice des sens">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Principal -->
+
+        <section>
+            <div id="title">
+                <h1>Le délice des sens</h1>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <div id="starters">
+                <div class="starters-card">
+                    <h4>Entrées</h4>
+                    <a href="tartare">
+                        <div class="card-text">
+                            <p>Tartare de thon</p><br />
+                            <p>Assaisonné au yuzu</p><br />
+                            <div class="price-card">
+                                <p>25€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="bouchée">
+                        <div class="card-text">
+                            <p>Bouchée de homard croustillant</p><br />
+                            <p>Et sa farandole de petits légumes</p><br />
+                            <div class="price-card">
+                                <p>35€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="velouté">
+                        <div class="card-text">
+                            <p>Velouté de cèpes</p><br />
+                            <p>Aux truffes</p><br />
+                            <div class="price-card">
+                                <p>20€</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="dishes">
+                <div class="dishes-card">
+                    <h4>Plats</h4>
+                    <a href="poulet">
+                        <div class="card-text">
+                            <p>Poulet rôti aux herbes de Provence</p><br />
+                            <p>Et sa crème de truffe</p><br />
+                            <div class="price-card">
+                                <p>40€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="langouste">
+                        <div class="card-text">
+                            <p>Langouste rôtie</p><br />
+                            <p>Et ses légumes de saison</p><br />
+                            <div class="price-card">
+                                <p>35€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="côte">
+                        <div class="card-text">
+                            <p>Côte de boeuf Angus</p><br />
+                            <p>Et sa purée de panais</p><br />
+                            <div class="price-card">
+                                <p>44€</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="desserts">
+                <div class="desserts-card">
+                    <h4>Desserts</h4>
+                    <a href="farandole">
+                        <div class="card-text">
+                            <p>Farandole de desserts</p><br />
+                            <p>Du chef</p><br />
+                            <div class="price-card">
+                                <p>18€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="macaron">
+                        <div class="card-text">
+                            <p>Crème brulée</p><br />
+                            <p>Revisitée</p><br />
+                            <div class="price-card">
+                                <p>22€</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="tiramisu">
+                        <div class="card-text">
+                            <p>Tiramisu</p><br />
+                            <p>À la noisette</p><br />
+                            <div class="price-card">
+                                <p>23€</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="order-button">
+                <input type="submit" value="Commander">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pied de page -->
+        <div id="footer">
+            <div class="titre">
+                <h2>ohmyfood</h2>
+
+                <div class="bulleted-list">
+                    <ul>
+                        <a href="propose_a_restaurant">
+                            <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
+                        </a>
+
+                        <a href="partner">
+                            <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
+                        </a>
+
+                        <a href="notice">
+                            <li>Mentions légales</li>
+                        </a>
+
+                        <a href="contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
