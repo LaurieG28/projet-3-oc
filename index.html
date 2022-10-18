@@ -8,10 +8,10 @@
     <!-- Dimension plusieurs support -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/style.css" type="text/css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/desktop.css" type="text/css">
     <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 992px)" href="css/tablette.css"
         type="text/css">
-    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css" type="text/css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/style.css" type="text/css">
 
     <!-- Fontawesome-->
 
@@ -25,8 +25,8 @@
 
     <!--Fichiers css-->
 
-    <link rel="stylesheet" href="css/mobile.scss" type="text/scss">
-    <link rel="stylesheet" href="css/styles.scss" type="text/scss">
+    <link rel="stylesheet" href="css/mobile.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 
     <!-- Titre -->
 
@@ -60,8 +60,14 @@
 
             <!-- Bannière -->
 
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <div class="paragraph">
+                <div class="__reserve">
+                    <h1>Réservez le menu qui vous convient</h1>
+                </div>
+                <div class="__discover">
+                    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                </div>
+            </div>
 
             <!-- Bouton explorer -->
 
@@ -121,49 +127,66 @@
                 <h2>Restaurants</h2>
                 <div id="card-restaurants">
 
-                    <div class="card-image">
-                        <img src="images/restaurants/lapalette.jpg" alt="La palette du goût">
-                    </div>
-                    <div class="restaurants-name">La palette du goût</div>
-                    <div class="neighborhoods">Ménilmontant</div>
-                    <div class="icon-restaurants">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-
-                    <div class="card-image">
-                        <img src="images/restaurants/lanote.jpg" alt="La note enchantée">
-                    </div>
-                    <div class="restaurants-name">
-                        <a href="enchantednote.html">La note enchantée</a>
-                    </div>
-                    <div class="neighborhoods">Charonne</div>
-                    <div class="icon-restaurants">
-                        <i class="fa-regular fa-heart"></i>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/restaurants/lapalette.jpg" alt="La palette du goût">
+                        </div>
+                        <div class="text-card">
+                            <div class="restaurants-name">
+                                <a href="paletteoftaste.html">La palette du goût</a>
+                            </div>
+                            <div class="neighborhoods">Ménilmontant</div>
+                            <div class="icon-restaurants">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="card-image">
-                        <img src="images/restaurants/française.jpg" alt="À la française">
-                    </div>
-                    <div class="restaurants-name">
-                        <a href="french.html">À la française</a>
-                    </div>
-
-                    <div class="neighborhoods">Cité Rouge</div>
-                    <div class="icon-restaurants">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-
-                    <div class="card-image">
-                        <img src="images/restaurants/ledélice.jpg" alt="Le délice des sens">
-                    </div>
-                    <div class="restaurants-name">Le délice des sens</div>
-                    <div class="neighborhoods">Folie-Méricourt</div>
-                    <div class="icon-restaurants">
-                        <i class="fa-regular fa-heart"></i>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/restaurants/minilanote.jpg" alt="La note enchantée">
+                        </div>
+                        <div class="text-card">
+                            <div class="restaurants-name">
+                                <a href="enchantednote.html">La note enchantée</a>
+                            </div>
+                            <div class="neighborhoods">Charonne</div>
+                            <div class="icon-restaurants">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
 
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/restaurants/française.jpg" alt="À la française">
+                        </div>
+                        <div class="text-card">
+                            <div class="restaurants-name">
+                                <a href="french.html">À la française</a>
+                            </div>
+                            <div class="neighborhoods">Cité Rouge</div>
+                            <div class="icon-restaurants">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/restaurants/ledélice.jpg" alt="Le délice des sens">
+                        </div>
+                        <div class="text-card">
+                            <div class="restaurants-name">
+                                <a href=delight-of-the-senses.html>Le délice des sens</a>
+                            </div>
+                            <div class="neighborhoods">Folie-Méricourt</div>
+                            <div class="icon-restaurants">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </section>
     </main>
