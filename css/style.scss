@@ -1,7 +1,11 @@
+$grey: #eaeaea;
+$grey-dark: #353535;
+$grey-light: #f6f6f6;
+
 /*Général*/
 body {
+  margin: 0px;
   font-family: "roboto", sans-serif;
-  background-color: #ebe5e5a3;
 }
 
 main h1 {
@@ -9,40 +13,44 @@ main h1 {
 }
 
 #logo {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  box-shadow: 0px -3px 6px 0px;
   display: flex;
   justify-content: center;
-  height: 33px;
-  border: 1px solid #ebe5e5a3;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-  &__images {
-    width: 50%;
-  }
+  height: 15px;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
-#search-bar {
+#location-bar {
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #e3dddd;
-  width: 100%;
-  height: 50px;
-  border-top: solid 3px #dad4d4;
-  border-bottom: solid 1px #dad4d4;
-}
+  background-color: #eaeaea;
+  font-size: 8px;
+  font-weight: bold;
+  color: #404040;
+  padding: 9px;
 
-#logo-search-bar {
-  margin: 10px;
+  #logo-location-bar {
+    margin-right: 10px;
+  }
+
+  #location-name {
+    margin-right: 15px;
+  }
 }
 
 .paragraph {
   display: flex;
   flex-direction: column;
-  background-color: #ebe5e5a3;
+  background-color: $grey-light;
 
-  .__reserve {
+  .reserve {
     text-align: center;
     margin-block: unset;
     h1 {
@@ -50,7 +58,7 @@ main h1 {
     }
   }
 
-  .__discover {
+  .discover {
     text-align: center;
     margin-block: unset;
     margin-bottom: 15px;
@@ -61,31 +69,34 @@ main h1 {
 #explorer-button {
   display: flex;
   justify-content: center;
-  background-color: #ebe5e5a3;
+  background-color: $grey-light;
   padding: 15px 0px 50px 0px;
+  text-align: center;
 
-  input {
-    background-color: #9356dc;
-    border: 1px solid #9356dc;
+  a {
+    background: linear-gradient(#ff79da, #9356dc);
     color: white;
     height: 60px;
     width: 230px;
     border-radius: 35px;
     font-size: medium;
+    text-decoration: none;
   }
 }
 
 section {
   background-color: white;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 
-  #functionning {
+  #functioning {
     display: flex;
     flex-direction: column;
 
     h2 {
+      display: flex;
       margin-bottom: 0px;
+      padding-left: 20px;
     }
   }
 
@@ -101,9 +112,9 @@ section {
     height: 70px;
     width: 92%;
     margin: 20px;
-    border-block: 1px solid #ebe5e5a3;
+    border-block: 1px solid $grey-light;
     border-radius: 20px;
-    background-color: #ebe5e5a3;
+    background-color: $grey-light;
     align-items: center;
 
     figcaption {
@@ -135,7 +146,7 @@ section {
 #restaurants {
   display: flex;
   flex-direction: column;
-  background-color: #ebe5e5a3;
+  background-color: $grey-light;
   padding-top: 30px;
 
   #card-restaurants {
@@ -145,21 +156,21 @@ section {
     .card {
       display: contents;
       object-fit: cover;
-      box-shadow: #7e797940 0px 15px 20px 0px;
+      box-shadow: $grey 0px 15px 20px 0px;
     }
 
     .card-image {
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
-      box-shadow: #7e797940 0px 15px 20px 0px;
+      box-shadow: $grey 0px 15px 20px 0px;
       background-color: white;
     }
 
     img {
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
-      max-width: 100%;
-      max-height: 200px;
+      width: 100%;
+      object-fit: cover;
     }
 
     .text-card {
@@ -169,6 +180,9 @@ section {
       margin-bottom: 20px;
       background-color: white;
       font-size: large;
+      padding-left: 10px;
+      padding-top: 10px;
+      line-height: 25px;
 
       .restaurants-name {
         font-weight: bold;
@@ -178,12 +192,44 @@ section {
           color: black;
         }
       }
+
+      .icon-restaurants {
+        height: 15px;
+      }
+
+      .fa-regular {
+        position: relative;
+        top: -45px;
+        right: -245px;
+      }
     }
   }
 }
 
 /*footer*/
 
-footer h2 {
-  font-family: "shrikhand";
+footer {
+  background-color: $grey-dark;
+  color: white;
+  padding-left: 10px;
+
+  h2 {
+    font-family: "shrikhand";
+    padding-top: 10px;
+    font-size: medium;
+  }
+
+  ul {
+    padding-left: 10px;
+    font-size: small;
+
+    a {
+      text-decoration: none;
+
+      li {
+        color: white;
+        list-style-type: none;
+      }
+    }
+  }
 }
