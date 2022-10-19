@@ -130,6 +130,13 @@ section .card-text a {
   position: absolute;
   left: 92px;
 }
+section .card-text:hover {
+  background-color: #f2e8ff;
+  cursor: pointer;
+}
+section .icon:hover {
+  color: #9356dc;
+}
 
 #restaurants {
   display: flex;
@@ -148,6 +155,18 @@ section .card-text a {
   -o-object-fit: cover;
      object-fit: cover;
   box-shadow: #eaeaea 0px 15px 20px 0px;
+}
+#restaurants #card-restaurants .new {
+  position: relative;
+  top: 40px;
+  right: -212px;
+  color: green;
+  background-color: #99e2d0;
+  max-width: 80px;
+  height: 25px;
+  text-align: center;
+  line-height: 23px;
+  border-radius: 3px;
 }
 #restaurants #card-restaurants .card-image {
   border-top-left-radius: 20px;
