@@ -1,0 +1,19 @@
+/*header*/
+.title {
+  font-family: "Shrikhand", sans-serif;
+}
+
+#arrow {
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
+#logo {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-shadow: none;
+  top: -12px;
+}
