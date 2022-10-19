@@ -207,6 +207,9 @@ section .icon:hover {
   top: -45px;
   right: -245px;
 }
+#restaurants #card-restaurants .text-card .fa-regular:hover {
+  background: linear-gradient(#9356dc, #ff79da);
+}
 
 /*footer*/
 footer {

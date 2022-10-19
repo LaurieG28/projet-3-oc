@@ -234,6 +234,10 @@ section {
         top: -45px;
         right: -245px;
       }
+
+      .fa-regular:hover {
+        background: linear-gradient($primary, $secondary);
+      }
     }
   }
 }
