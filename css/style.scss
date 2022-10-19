@@ -237,6 +237,7 @@ section {
 
       .fa-regular:hover {
         background: linear-gradient($primary, $secondary);
+        cursor: pointer;
       }
     }
   }
