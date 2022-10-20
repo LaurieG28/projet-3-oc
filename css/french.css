@@ -48,19 +48,45 @@ main section .fa-regular {
   right: -86px;
 }
 main section #starters {
+  display: flex;
   position: relative;
-  top: -35px;
-  padding-left: 20px;
+  top: -40px;
+}
+main section #starters h4 {
+  margin-left: 20px;
 }
 main section #starters a {
   text-decoration: none;
   color: black;
 }
-main section #starters .card-text {
+main section #starters a .card-text {
   display: flex;
   flex-direction: row;
   background-color: white;
-  margin: 0px;
   margin-bottom: 10px;
   line-height: 25px;
+  width: 345px;
+}
+main section #starters p {
+  position: relative;
+  left: -10px;
+}
+main section #starters .price-card {
+  width: 20%;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  bottom: -15px;
+}
+main #dishes {
+  position: relative;
+  top: -30px;
+  margin: 20px;
+}
+main #dishes .card-text {
+  background-color: white;
+  color: black;
+}
+main #dishes .card-text p {
+  text-decoration: none;
 }/*# sourceMappingURL=french.css.map */
