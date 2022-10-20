@@ -17,3 +17,50 @@
   box-shadow: none;
   top: -12px;
 }
+
+#image img {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  position: relative;
+  top: -47px;
+}
+main section {
+  background-color: #f6f6f6;
+  padding: 0px;
+  position: relative;
+  top: 30px;
+}
+main section #title {
+  display: flex;
+  padding-left: 20px;
+  position: relative;
+  top: -25px;
+}
+main section .fa-regular {
+  position: relative;
+  top: 27px;
+  right: -86px;
+}
+main section #starters {
+  position: relative;
+  top: -35px;
+  padding-left: 20px;
+}
+main section #starters a {
+  text-decoration: none;
+  color: black;
+}
+main section #starters .card-text {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin: 0px;
+  margin-bottom: 10px;
+  line-height: 25px;
+}/*# sourceMappingURL=french.css.map */

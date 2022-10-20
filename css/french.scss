@@ -1,0 +1,82 @@
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99e2d0;
+$grey: #eaeaea;
+$grey-dark: #353535;
+$grey-light: #f6f6f6;
+$primary-light: #f2e8ff;
+
+/*header*/
+.title {
+  font-family: "Shrikhand", sans-serif;
+}
+
+#arrow {
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
+#logo {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-shadow: none;
+  top: -12px;
+}
+
+#image {
+  img {
+    width: 100%;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  position: relative;
+  top: -47px;
+
+  section {
+    background-color: $grey-light;
+    padding: 0px;
+    position: relative;
+    top: 30px;
+
+    #title {
+      display: flex;
+      padding-left: 20px;
+      position: relative;
+      top: -25px;
+    }
+
+    .fa-regular {
+      position: relative;
+      top: 27px;
+      right: -86px;
+    }
+
+    #starters {
+      position: relative;
+      top: -35px;
+      padding-left: 20px;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .card-text {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        margin: 0px;
+        margin-bottom: 10px;
+        line-height: 25px;
+      }
+    }
+  }
+}
