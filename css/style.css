@@ -118,7 +118,7 @@ section .card-text figcaption {
   background-color: #9356dc;
   color: white;
   position: absolute;
-  left: 10px;
+  left: 9px;
 }
 section .card-text .icon {
   position: absolute;
@@ -151,65 +151,74 @@ section .icon:hover {
   flex-direction: column;
 }
 #restaurants #card-restaurants .card {
+  color: black;
   display: contents;
   -o-object-fit: cover;
      object-fit: cover;
   box-shadow: #eaeaea 0px 15px 20px 0px;
 }
-#restaurants #card-restaurants .new {
-  position: relative;
-  top: 40px;
-  right: -212px;
-  color: green;
-  background-color: #99e2d0;
-  max-width: 80px;
-  height: 25px;
-  text-align: center;
-  line-height: 23px;
-  border-radius: 3px;
-}
 #restaurants #card-restaurants .card-image {
+  position: relative;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   box-shadow: #eaeaea 0px 15px 20px 0px;
   background-color: white;
 }
+#restaurants #card-restaurants .card-image .new {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  color: #008766;
+  background-color: #99e2d0;
+  width: 80px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 600;
+}
 #restaurants #card-restaurants img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 100%;
+  height: 170px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 #restaurants #card-restaurants .text-card {
+  position: relative;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: rgba(126, 121, 121, 0.25) 0px 5px 5px 0px;
   margin-bottom: 20px;
   background-color: white;
-  font-size: large;
+  font-size: 15px;
   padding-left: 10px;
   padding-top: 10px;
-  line-height: 25px;
+  padding-bottom: 10px;
+  line-height: 20px;
 }
 #restaurants #card-restaurants .text-card .restaurants-name {
   font-weight: bold;
 }
-#restaurants #card-restaurants .text-card .restaurants-name a {
-  text-decoration: none;
-  color: black;
+#restaurants #card-restaurants .text-card .restaurants-name p {
+  margin: 0px;
 }
-#restaurants #card-restaurants .text-card .icon-restaurants {
-  height: 15px;
+#restaurants #card-restaurants .text-card .fa-solid {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 20px;
 }
-#restaurants #card-restaurants .text-card .fa-regular {
-  position: relative;
-  top: -45px;
-  right: -245px;
-}
-#restaurants #card-restaurants .text-card .fa-regular:hover {
-  background: linear-gradient(#9356dc, #ff79da);
+#restaurants #card-restaurants .text-card .fa-solid:hover {
   cursor: pointer;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 
 /*footer*/

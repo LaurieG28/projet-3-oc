@@ -11,19 +11,17 @@ $primary-light: #f2e8ff;
   font-family: "Shrikhand", sans-serif;
 }
 
-#arrow {
-  position: relative;
-  top: 25px;
-  left: 25px;
-}
-
 #logo {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
-  box-shadow: none;
-  top: -12px;
+
+  #arrow {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+  }
 }
 
 #image {
