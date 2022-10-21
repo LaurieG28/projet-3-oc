@@ -17,6 +17,8 @@
 
 #image img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main {
@@ -80,10 +82,10 @@ main #dishes {
   top: -30px;
   margin: 20px;
 }
-main #dishes .card-text {
+main #dishes a {
+  text-decoration: none;
+}
+main #dishes a .card-text {
   background-color: white;
   color: black;
-}
-main #dishes .card-text p {
-  text-decoration: none;
 }/*# sourceMappingURL=french.css.map */

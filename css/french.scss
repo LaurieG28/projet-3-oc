@@ -27,6 +27,7 @@ $primary-light: #f2e8ff;
 #image {
   img {
     width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -100,12 +101,12 @@ main {
     top: -30px;
     margin: 20px;
 
-    .card-text {
-      background-color: white;
-      color: black;
+    a {
+      text-decoration: none;
 
-      p {
-        text-decoration: none;
+      .card-text {
+        background-color: white;
+        color: black;
       }
     }
   }
