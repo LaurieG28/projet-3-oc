@@ -1,3 +1,7 @@
+body {
+  background-color: #f6f6f6;
+}
+
 /*header*/
 .title {
   font-family: "Shrikhand", sans-serif;
@@ -5,9 +9,10 @@
 
 #logo {
   width: 100%;
-  position: relative;
+  position: inherit;
   display: flex;
   justify-content: center;
+  height: 30px;
 }
 #logo #arrow {
   position: absolute;
@@ -24,32 +29,25 @@
 main {
   display: flex;
   flex-direction: column;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
   position: relative;
-  top: -47px;
+  top: -60px;
 }
 main section {
   background-color: #f6f6f6;
   padding: 0px;
-  position: relative;
-  top: 30px;
 }
 main section #title {
   display: flex;
   padding-left: 20px;
-  position: relative;
-  top: -25px;
+  width: 100%;
 }
 main section .fa-regular {
-  position: relative;
-  top: 27px;
-  right: -86px;
+  position: absolute;
+  top: 30px;
+  right: 40px;
 }
 main section #starters {
   display: flex;
-  position: relative;
-  top: -40px;
 }
 main section #starters h4 {
   margin-left: 20px;
@@ -60,26 +58,19 @@ main section #starters a {
 }
 main section #starters a .card-text {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
   background-color: white;
   margin-bottom: 10px;
+  padding-left: 10px;
   line-height: 25px;
   width: 345px;
-}
-main section #starters p {
-  position: relative;
-  left: -10px;
 }
 main section #starters .price-card {
   width: 20%;
   display: flex;
   justify-content: end;
-  position: relative;
-  bottom: -15px;
 }
 main #dishes {
-  position: relative;
-  top: -30px;
   margin: 20px;
 }
 main #dishes a {
@@ -88,4 +79,49 @@ main #dishes a {
 main #dishes a .card-text {
   background-color: white;
   color: black;
+  margin-left: 0px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  line-height: 25px;
+  width: 345px;
+}
+main #desserts .desserts-card h4 {
+  padding-left: 20px;
+}
+main #desserts .desserts-card a {
+  text-decoration: none;
+  color: black;
+}
+main #desserts .desserts-card a .card-text {
+  background-color: white;
+  margin-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  line-height: 25px;
+  width: 345px;
+}
+main a {
+  text-decoration: none;
+}
+main a #order-button {
+  display: flex;
+  justify-content: center;
+}
+main a #order-button input {
+  background: linear-gradient(#ff79da, #9356dc);
+  color: white;
+  height: 60px;
+  width: 210px;
+  border-radius: 35px;
+  font-size: medium;
+  text-decoration: none;
+  line-height: 60px;
+  border: 0px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  cursor: pointer;
 }/*# sourceMappingURL=french.css.map */
