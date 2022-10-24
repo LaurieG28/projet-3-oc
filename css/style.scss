@@ -21,6 +21,11 @@ main {
   }
 }
 
+h4 {
+  border-bottom: 3px solid $tertiary;
+  width: 10%;
+}
+
 #logo {
   width: 100%;
   position: absolute;

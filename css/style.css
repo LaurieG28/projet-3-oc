@@ -12,6 +12,11 @@ main h1 {
   font-family: "shrikhand";
 }
 
+h4 {
+  border-bottom: 3px solid #99e2d0;
+  width: 10%;
+}
+
 #logo {
   width: 100%;
   position: absolute;
