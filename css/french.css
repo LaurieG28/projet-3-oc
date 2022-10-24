@@ -54,7 +54,6 @@ main section .fa-regular {
 main section #starters .starters-card {
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
 }
 main h4 {
   margin-left: 20px;
@@ -81,19 +80,47 @@ main #order-button div input {
   cursor: pointer;
 }
 
-.card-french {
+.card {
   text-decoration: none;
   color: black;
 }
-.card-french .card-french {
+.card .card-french {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   background-color: white;
-  line-height: 25px;
   padding-left: 10px;
   padding-right: 30px;
   margin: 0px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  width: unset;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.card .card-french .price-card p {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+#order-button {
+  display: flex;
+  justify-content: center;
+}
+#order-button input {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#ff79da, #9356dc);
+  color: white;
+  height: 60px;
+  width: 210px;
+  border-radius: 35px;
+  font-size: medium;
+  text-decoration: none;
+  line-height: 60px;
+  border: 0px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  cursor: pointer;
 }/*# sourceMappingURL=french.css.map */
