@@ -26,6 +26,10 @@ body {
     top: 15px;
     left: 25px;
   }
+
+  a {
+    text-decoration: none;
+  }
 }
 
 #image {
@@ -66,12 +70,9 @@ main {
     h4 {
       margin-left: 20px;
     }
-  }
 
-  #order-button {
-    text-decoration: none;
-
-    div {
+    #order-button {
+      text-decoration: none;
       display: flex;
       justify-content: center;
 

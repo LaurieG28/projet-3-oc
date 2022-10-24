@@ -19,6 +19,9 @@ body {
   top: 15px;
   left: 25px;
 }
+#logo a {
+  text-decoration: none;
+}
 
 #image img {
   width: 100%;
@@ -54,14 +57,12 @@ main section .fa-regular {
 main section h4 {
   margin-left: 20px;
 }
-main #order-button {
+main section #order-button {
   text-decoration: none;
-}
-main #order-button div {
   display: flex;
   justify-content: center;
 }
-main #order-button div input {
+main section #order-button input {
   background: linear-gradient(#ff79da, #9356dc);
   color: white;
   height: 60px;
