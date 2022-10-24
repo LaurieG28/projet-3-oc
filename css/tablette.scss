@@ -1,4 +1,14 @@
-Section #card {
-  display: flex;
-  flex-direction: row;
+section {
+  #card {
+    display: flex;
+    flex-direction: row;
+
+    .card-text figcaption {
+      position: inherit;
+
+      .icon {
+        position: inherit;
+      }
+    }
+  }
 }

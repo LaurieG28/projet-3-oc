@@ -1,4 +1,10 @@
-Section #card {
+section #card {
   display: flex;
   flex-direction: row;
+}
+section #card .card-text figcaption {
+  position: inherit;
+}
+section #card .card-text figcaption .icon {
+  position: inherit;
 }/*# sourceMappingURL=tablette.css.map */
