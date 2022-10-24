@@ -30,9 +30,9 @@ main {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -155px;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
+  top: -50px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   padding-top: 20px;
 }
 main section {
@@ -44,6 +44,7 @@ main section #title {
   width: 100%;
 }
 main section #title h1 {
+  margin: 0px;
   padding-left: 20px;
 }
 main section .fa-regular {
@@ -51,8 +52,13 @@ main section .fa-regular {
   top: 30px;
   right: 40px;
 }
-main section h4 {
+main section #starters .starters-card {
+  display: flex;
+  flex-direction: column;
+}
+main h5 {
   margin-left: 20px;
+  font-weight: unset;
 }
 main #order-button {
   text-decoration: none;
@@ -80,23 +86,27 @@ main #order-button div input {
   text-decoration: none;
   color: black;
 }
-.card .card-note {
-  display: flex;
-  flex-direction: column;
+.card .name-card {
   background-color: white;
-  line-height: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 30px;
-  margin: 0px;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-bottom: 20px;
-  border-radius: 20px;
+  border-radius: 15px;
 }
-.card .price-card p {
+.card .name-card p {
+  margin: 0px;
+}
+.card .name-card .price-card {
+  margin-top: 3px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+.card .name-card .price-card p {
   font-size: 15px;
-  font-weight: 600;
 }
 
 #order-button {
@@ -118,4 +128,4 @@ main #order-button div input {
   margin-top: 30px;
   margin-bottom: 40px;
   cursor: pointer;
-}/*# sourceMappingURL=enchantednote.css.map */
+}/*# sourceMappingURL=restaurants.css.map */

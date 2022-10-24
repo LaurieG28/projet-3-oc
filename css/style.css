@@ -12,7 +12,8 @@ main h1 {
   font-family: "shrikhand";
 }
 
-h4 {
+h4,
+h5 {
   border-bottom: 3px solid #99e2d0;
   width: 11%;
 }
@@ -21,10 +22,10 @@ h4 {
   width: 100%;
   position: absolute;
   top: 0;
-  box-shadow: 0px 0px 5px 0px;
+  box-shadow: 0px -10px 18px 0px;
   display: flex;
   justify-content: center;
-  height: 27px;
+  height: 30px;
   padding-top: 5px;
   padding-bottom: 10px;
 }
@@ -39,7 +40,7 @@ h4 {
   font-size: 13px;
   font-weight: bold;
   color: #404040;
-  padding: 9px;
+  padding: 15px;
 }
 #location-bar #logo-location-bar {
   margin-right: 10px;
@@ -58,31 +59,36 @@ h4 {
   margin-block: unset;
 }
 .paragraph .reserve h1 {
-  margin-bottom: 0px;
+  font-size: 20px;
+  margin: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
 }
 .paragraph .discover {
   text-align: center;
   margin-block: unset;
-  margin-bottom: 15px;
-  font-size: large;
+  font-size: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #explorer-button {
   display: flex;
   justify-content: center;
   background-color: #f6f6f6;
-  padding: 15px 0px 50px 0px;
+  padding-bottom: 50px;
   text-align: center;
 }
 #explorer-button a {
   background: linear-gradient(#ff79da, #9356dc);
   color: white;
-  height: 60px;
-  width: 230px;
+  height: 55px;
+  width: 220px;
   border-radius: 35px;
   font-size: medium;
   text-decoration: none;
-  line-height: 60px;
+  line-height: 55px;
 }
 
 section {
@@ -238,7 +244,7 @@ footer h2 {
   font-size: medium;
 }
 footer ul {
-  padding-left: 10px;
+  padding-left: 0px;
   font-size: small;
 }
 footer ul a {
@@ -247,4 +253,9 @@ footer ul a {
 footer ul a li {
   color: white;
   list-style-type: none;
+  padding-bottom: 10px;
+}
+footer ul a li i {
+  font-size: 10px;
+  width: 18px;
 }/*# sourceMappingURL=style.css.map */
