@@ -40,15 +40,21 @@ main {
   flex-direction: column;
   position: relative;
   top: -60px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding-top: 20px;
 
   section {
-    background-color: $grey-light;
+    background-color: unset;
     padding: 0px;
 
     #title {
       display: flex;
-      padding-left: 20px;
       width: 100%;
+
+      h1 {
+        padding-left: 20px;
+      }
     }
 
     .fa-regular {
@@ -57,87 +63,15 @@ main {
       right: 40px;
     }
 
-    #starters {
-      display: flex;
-
-      h4 {
-        margin-left: 20px;
-      }
-
-      a {
-        text-decoration: none;
-        color: black;
-
-        .card-text {
-          display: flex;
-          justify-content: flex-start;
-          background-color: white;
-          margin-bottom: 10px;
-          padding-left: 10px;
-          line-height: 25px;
-          width: 345px;
-        }
-      }
-
-      p {
-      }
-
-      .price-card {
-        width: 20%;
-        display: flex;
-        justify-content: end;
-      }
+    h4 {
+      margin-left: 20px;
     }
   }
 
-  #dishes {
-    margin: 20px;
-
-    a {
-      text-decoration: none;
-
-      .card-text {
-        background-color: white;
-        color: black;
-        margin-left: 0px;
-        display: flex;
-        justify-content: flex-start;
-        margin-bottom: 10px;
-        padding-left: 10px;
-        line-height: 25px;
-        width: 345px;
-      }
-    }
-  }
-
-  #desserts {
-    .desserts-card {
-      h4 {
-        padding-left: 20px;
-      }
-
-      a {
-        text-decoration: none;
-        color: black;
-
-        .card-text {
-          background-color: white;
-          margin-left: 20px;
-          display: flex;
-          justify-content: flex-start;
-          margin-bottom: 10px;
-          padding-left: 10px;
-          line-height: 25px;
-          width: 345px;
-        }
-      }
-    }
-  }
-
-  a {
+  #order-button {
     text-decoration: none;
 
-    #order-button {
+    div {
       display: flex;
       justify-content: center;
 
@@ -156,5 +90,23 @@ main {
         cursor: pointer;
       }
     }
+  }
+}
+
+.card {
+  text-decoration: none;
+  color: black;
+
+  .card-text {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    line-height: 25px;
+    padding-left: 10px;
+    padding-right: 30px;
+    margin: 0px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: unset;
   }
 }

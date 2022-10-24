@@ -31,87 +31,37 @@ main {
   flex-direction: column;
   position: relative;
   top: -60px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding-top: 20px;
 }
 main section {
-  background-color: #f6f6f6;
+  background-color: unset;
   padding: 0px;
 }
 main section #title {
   display: flex;
-  padding-left: 20px;
   width: 100%;
+}
+main section #title h1 {
+  padding-left: 20px;
 }
 main section .fa-regular {
   position: absolute;
   top: 30px;
   right: 40px;
 }
-main section #starters {
-  display: flex;
-}
-main section #starters h4 {
+main section h4 {
   margin-left: 20px;
 }
-main section #starters a {
-  text-decoration: none;
-  color: black;
-}
-main section #starters a .card-text {
-  display: flex;
-  justify-content: flex-start;
-  background-color: white;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  line-height: 25px;
-  width: 345px;
-}
-main section #starters .price-card {
-  width: 20%;
-  display: flex;
-  justify-content: end;
-}
-main #dishes {
-  margin: 20px;
-}
-main #dishes a {
+main #order-button {
   text-decoration: none;
 }
-main #dishes a .card-text {
-  background-color: white;
-  color: black;
-  margin-left: 0px;
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  line-height: 25px;
-  width: 345px;
-}
-main #desserts .desserts-card h4 {
-  padding-left: 20px;
-}
-main #desserts .desserts-card a {
-  text-decoration: none;
-  color: black;
-}
-main #desserts .desserts-card a .card-text {
-  background-color: white;
-  margin-left: 20px;
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  line-height: 25px;
-  width: 345px;
-}
-main a {
-  text-decoration: none;
-}
-main a #order-button {
+main #order-button div {
   display: flex;
   justify-content: center;
 }
-main a #order-button input {
+main #order-button div input {
   background: linear-gradient(#ff79da, #9356dc);
   color: white;
   height: 60px;
@@ -124,4 +74,21 @@ main a #order-button input {
   margin-top: 30px;
   margin-bottom: 40px;
   cursor: pointer;
+}
+
+.card {
+  text-decoration: none;
+  color: black;
+}
+.card .card-text {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  line-height: 25px;
+  padding-left: 10px;
+  padding-right: 30px;
+  margin: 0px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: unset;
 }/*# sourceMappingURL=french.css.map */
