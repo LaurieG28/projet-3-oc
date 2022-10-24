@@ -97,16 +97,47 @@ main {
   text-decoration: none;
   color: black;
 
-  .card-text {
+  .card-note {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     background-color: white;
-    line-height: 25px;
+    line-height: 0px;
     padding-left: 10px;
     padding-right: 30px;
     margin: 0px;
     margin-left: 20px;
-    margin-bottom: 10px;
-    width: unset;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+
+  .price-card {
+    p {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}
+
+#order-button {
+  display: flex;
+  justify-content: center;
+
+  input {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#ff79da, #9356dc);
+    color: white;
+    height: 60px;
+    width: 210px;
+    border-radius: 35px;
+    font-size: medium;
+    text-decoration: none;
+    line-height: 60px;
+    border: 0px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    cursor: pointer;
   }
 }

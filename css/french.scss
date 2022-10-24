@@ -63,9 +63,17 @@ main {
       right: 40px;
     }
 
-    h4 {
-      margin-left: 20px;
+    #starters {
+      .starters-card {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+      }
     }
+  }
+
+  h4 {
+    margin-left: 20px;
   }
 
   #order-button {
@@ -93,11 +101,11 @@ main {
   }
 }
 
-.card {
+.card-french {
   text-decoration: none;
   color: black;
 
-  .card-text {
+  .card-french {
     display: flex;
     justify-content: space-between;
     background-color: white;

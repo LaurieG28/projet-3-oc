@@ -51,7 +51,12 @@ main section .fa-regular {
   top: 30px;
   right: 40px;
 }
-main section h4 {
+main section #starters .starters-card {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+main h4 {
   margin-left: 20px;
 }
 main #order-button {
@@ -76,11 +81,11 @@ main #order-button div input {
   cursor: pointer;
 }
 
-.card {
+.card-french {
   text-decoration: none;
   color: black;
 }
-.card .card-text {
+.card-french .card-french {
   display: flex;
   justify-content: space-between;
   background-color: white;
