@@ -22,6 +22,7 @@ body {
   height: 30px;
 
   #arrow {
+    color: $grey-dark;
     position: absolute;
     top: 15px;
     left: 25px;
@@ -62,6 +63,13 @@ main {
       position: absolute;
       top: 30px;
       right: 40px;
+    }
+
+    .fa-regular:hover {
+      cursor: pointer;
+      background: linear-gradient(#9356dc, #ff79da);
+      background-clip: text;
+      color: transparent;
     }
 
     #starters {

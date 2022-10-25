@@ -1,54 +1,91 @@
+html {
+  height: 100vh;
+}
+
 header nav #location-bar {
   font-size: 16px;
 }
 header nav .paragraph .reserve h1 {
   font-size: 25px;
+  padding-top: 10px;
 }
 header nav .paragraph .discover {
   font-size: 20px;
 }
 
+h2 {
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+.paragraph .reserve h2 {
+  padding-top: 7px;
+}
+
+#explorer-button {
+  padding-bottom: 15px;
+}
+
+section {
+  padding-top: 0px;
+}
 section #functioning {
   background-color: white;
-  align-items: center;
 }
 section #functioning #card {
-  width: 300px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
 }
 section #functioning #card .card-text {
-  justify-content: space-evenly;
-  font-size: 20px;
+  position: relative;
+  justify-content: center;
+  margin: 0px 10px 0px 10px;
 }
 section #functioning #card .card-text figcaption {
-  position: relative;
-  left: -26px;
+  position: absolute;
+  left: -11px;
 }
 section #functioning #card .card-text .icon {
   position: relative;
-  left: -10px;
+  left: -6px;
+  padding-right: 10px;
 }
 section #functioning #card .card-text a {
+  text-decoration: none;
   position: unset;
 }
-
-section #restaurants h2 {
-  display: flex;
-  justify-content: center;
+section #restaurants {
+  padding-top: 0px;
+  padding-bottom: 15px;
 }
 section #restaurants #card-restaurants {
-  flex-direction: unset;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
+}
+section #restaurants #card-restaurants a {
+  text-decoration: none;
 }
 section #restaurants #card-restaurants .card {
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  margin: 10px;
 }
 section #restaurants #card-restaurants .card .text-card {
   margin-bottom: unset;
   font-size: 18px;
 }
 section #restaurants #card-restaurants .card-image {
-  width: 383px;
+  width: 220px;
+}
+
+footer {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+footer #footer h2 {
+  margin: 0px;
+  text-align: left;
 }/*# sourceMappingURL=desktop.css.map */

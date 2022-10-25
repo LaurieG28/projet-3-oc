@@ -11,6 +11,7 @@ $green-dark: #008766;
 body {
   margin: 0px;
   font-family: "roboto", sans-serif;
+  background-color: white;
 }
 
 main {
@@ -69,7 +70,7 @@ h5 {
     text-align: center;
     margin-block: unset;
 
-    h1 {
+    h2 {
       font-size: 20px;
       margin: 0px;
       padding-left: 30px;
@@ -177,8 +178,9 @@ section {
 #restaurants {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
   background-color: $grey-light;
+  padding-top: 20px;
+  padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
 

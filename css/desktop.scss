@@ -7,6 +7,10 @@ $grey-light: #f6f6f6;
 $primary-light: #f2e8ff;
 $green-dark: #008766;
 
+html {
+  height: 100vh;
+}
+
 header {
   nav {
     #location-bar {
@@ -15,6 +19,7 @@ header {
 
     .paragraph .reserve h1 {
       font-size: 25px;
+      padding-top: 10px;
     }
 
     .paragraph .discover {
@@ -23,52 +28,71 @@ header {
   }
 }
 
+h2 {
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+.paragraph .reserve h2 {
+  padding-top: 7px;
+}
+
+#explorer-button {
+  padding-bottom: 15px;
+}
+
 section {
+  padding-top: 0px;
+
   #functioning {
     background-color: white;
-    align-items: center;
 
     #card {
-      width: 300px;
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
 
       .card-text {
-        justify-content: space-evenly;
-        font-size: 20px;
+        position: relative;
+        justify-content: center;
+        margin: 0px 10px 0px 10px;
 
         figcaption {
-          position: relative;
-          left: -26px;
+          position: absolute;
+          left: -11px;
         }
-
         .icon {
           position: relative;
-          left: -10px;
+          left: -6px;
+          padding-right: 10px;
         }
 
         a {
+          text-decoration: none;
           position: unset;
         }
       }
     }
   }
-}
 
-section {
   #restaurants {
-    h2 {
-      display: flex;
-      justify-content: center;
-    }
+    padding-top: 0px;
+    padding-bottom: 15px;
 
     #card-restaurants {
-      flex-direction: unset;
-      flex-wrap: wrap;
+      flex-flow: row wrap;
       justify-content: center;
+
+      a {
+        text-decoration: none;
+      }
 
       .card {
         display: flex;
         flex-direction: column;
-        margin: 50px;
+        margin: 10px;
 
         .text-card {
           margin-bottom: unset;
@@ -77,8 +101,20 @@ section {
       }
 
       .card-image {
-        width: 383px;
+        width: 220px;
       }
+    }
+  }
+}
+
+footer {
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  #footer {
+    h2 {
+      margin: 0px;
+      text-align: left;
     }
   }
 }

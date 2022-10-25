@@ -3,6 +3,7 @@
 body {
   margin: 0px;
   font-family: "roboto", sans-serif;
+  background-color: white;
 }
 
 main {
@@ -58,7 +59,7 @@ h5 {
   text-align: center;
   margin-block: unset;
 }
-.paragraph .reserve h1 {
+.paragraph .reserve h2 {
   font-size: 20px;
   margin: 0px;
   padding-left: 30px;
@@ -153,8 +154,9 @@ section .icon:hover {
 #restaurants {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
   background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }

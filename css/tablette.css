@@ -7,14 +7,16 @@ section #functioning {
 section #functioning #card {
   display: flex;
   flex-direction: row;
+  padding: 10px;
 }
 section #functioning #card .card-text {
-  justify-content: space-evenly;
+  position: relative;
+  justify-content: center;
   margin: 20px 10px 20px 10px;
 }
 section #functioning #card .card-text figcaption {
-  position: relative;
-  left: -17px;
+  position: absolute;
+  left: -11px;
 }
 section #functioning #card .card-text .icon {
   position: relative;
@@ -39,9 +41,4 @@ section #restaurants #card-restaurants .card .card-image {
 }
 section #restaurants #card-restaurants .card .text-card {
   margin-bottom: unset;
-}
-
-footer #footer {
-  display: flex;
-  justify-content: center;
 }/*# sourceMappingURL=tablette.css.map */

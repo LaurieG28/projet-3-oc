@@ -16,14 +16,16 @@ section {
     #card {
       display: flex;
       flex-direction: row;
+      padding: 10px;
 
       .card-text {
-        justify-content: space-evenly;
+        position: relative;
+        justify-content: center;
         margin: 20px 10px 20px 10px;
 
         figcaption {
-          position: relative;
-          left: -17px;
+          position: absolute;
+          left: -11px;
         }
         .icon {
           position: relative;
@@ -59,12 +61,5 @@ section {
         }
       }
     }
-  }
-}
-
-footer {
-  #footer {
-    display: flex;
-    justify-content: center;
   }
 }
