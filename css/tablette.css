@@ -2,9 +2,34 @@ section #card {
   display: flex;
   flex-direction: row;
 }
-section #card .card-text figcaption {
-  position: inherit;
+section #card .card-text {
+  justify-content: space-evenly;
+  margin: 20px 10px 20px 10px;
 }
-section #card .card-text figcaption .icon {
-  position: inherit;
+section #card .card-text figcaption {
+  position: relative;
+  left: -17px;
+}
+section #card .card-text .icon {
+  position: relative;
+  left: -6px;
+}
+section #card .card-text a {
+  position: unset;
+}
+
+section #restaurants #card-restaurants {
+  flex-flow: row wrap;
+  justify-content: center;
+}
+section #restaurants #card-restaurants .card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-decoration: none;
+}
+
+footer #footer {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=tablette.css.map */

@@ -1,14 +1,56 @@
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99e2d0;
+$grey: #eaeaea;
+$grey-dark: #353535;
+$grey-light: #f6f6f6;
+$primary-light: #f2e8ff;
+$green-dark: #008766;
+
 section {
   #card {
     display: flex;
     flex-direction: row;
 
-    .card-text figcaption {
-      position: inherit;
+    .card-text {
+      justify-content: space-evenly;
+      margin: 20px 10px 20px 10px;
 
+      figcaption {
+        position: relative;
+        left: -17px;
+      }
       .icon {
-        position: inherit;
+        position: relative;
+        left: -6px;
+      }
+
+      a {
+        position: unset;
       }
     }
+  }
+}
+
+section {
+  #restaurants {
+    #card-restaurants {
+      flex-flow: row wrap;
+      justify-content: center;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+footer {
+  #footer {
+    display: flex;
+    justify-content: center;
   }
 }
