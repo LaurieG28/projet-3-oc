@@ -36,7 +36,7 @@ main {
   padding-top: 20px;
 }
 main section {
-  background-color: unset;
+  background-color: #f6f6f6;
   padding: 0px;
 }
 main section #title {

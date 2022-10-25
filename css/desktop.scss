@@ -7,27 +7,42 @@ $grey-light: #f6f6f6;
 $primary-light: #f2e8ff;
 $green-dark: #008766;
 
-section {
-  background-color: unset;
+header {
+  nav {
+    #location-bar {
+      font-size: 16px;
+    }
 
+    .paragraph .reserve h1 {
+      font-size: 25px;
+    }
+
+    .paragraph .discover {
+      font-size: 20px;
+    }
+  }
+}
+
+section {
   #functioning {
     background-color: white;
+    align-items: center;
 
     #card {
-      display: flex;
-      flex-direction: row;
+      width: 300px;
 
       .card-text {
         justify-content: space-evenly;
-        margin: 20px 10px 20px 10px;
+        font-size: 20px;
 
         figcaption {
           position: relative;
-          left: -17px;
+          left: -26px;
         }
+
         .icon {
           position: relative;
-          left: -6px;
+          left: -10px;
         }
 
         a {
@@ -40,31 +55,30 @@ section {
 
 section {
   #restaurants {
+    h2 {
+      display: flex;
+      justify-content: center;
+    }
+
     #card-restaurants {
-      flex-flow: row wrap;
+      flex-direction: unset;
+      flex-wrap: wrap;
       justify-content: center;
 
       .card {
         display: flex;
         flex-direction: column;
-        margin: 20px;
-        text-decoration: none;
-
-        .card-image {
-          width: 246px;
-        }
+        margin: 50px;
 
         .text-card {
           margin-bottom: unset;
+          font-size: 18px;
         }
       }
-    }
-  }
-}
 
-footer {
-  #footer {
-    display: flex;
-    justify-content: center;
+      .card-image {
+        width: 383px;
+      }
+    }
   }
 }
