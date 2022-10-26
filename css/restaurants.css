@@ -104,6 +104,8 @@ main #order-button div input {
   margin-right: 10px;
   margin-bottom: 20px;
   border-radius: 15px;
+  -webkit-animation: slideDown 5s;
+          animation: slideDown 5s;
 }
 .card .name-card p {
   margin: 0px;
@@ -115,6 +117,28 @@ main #order-button div input {
 }
 .card .name-card .price-card p {
   font-size: 15px;
+}
+
+@-webkit-keyframes slideDown {
+  from {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 #order-button {

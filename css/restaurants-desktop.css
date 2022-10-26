@@ -1,0 +1,12 @@
+main section #starters {
+  display: flex;
+  justify-content: center;
+}
+main section #dishes {
+  display: flex;
+  justify-content: center;
+}
+main section #desserts {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=restaurants-desktop.css.map */

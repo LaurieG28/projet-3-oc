@@ -124,6 +124,7 @@ main {
     margin-right: 10px;
     margin-bottom: 20px;
     border-radius: 15px;
+    animation: slideDown 5s;
 
     p {
       margin: 0px;
@@ -137,6 +138,19 @@ main {
       p {
         font-size: 15px;
       }
+    }
+  }
+}
+
+.name-card:hover {
+  @keyframes slideDown {
+    from {
+      transform: translateY(150px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 }

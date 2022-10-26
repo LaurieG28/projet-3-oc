@@ -1,1 +1,17 @@
-/*# sourceMappingURL=restaurants-tablet.css.map */
+main {
+  flex-direction: row;
+}
+main section #title h1 {
+  padding-left: 15px;
+}
+main section #dishes {
+  margin: 60px 0px 0px 0px;
+}
+main section #desserts {
+  margin: 60px 0px 0px 0px;
+}
+main section #order-button {
+  position: relative;
+  right: 260px;
+  bottom: -30px;
+}/*# sourceMappingURL=restaurants-tablet.css.map */
