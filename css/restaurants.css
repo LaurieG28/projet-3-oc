@@ -121,22 +121,22 @@ main #order-button div input {
 
 @-webkit-keyframes slideDown {
   from {
-    transform: translateY(150px);
+    transform: translateY(0px);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    transform: translateY(200px);
     opacity: 1;
   }
 }
 
 @keyframes slideDown {
   from {
-    transform: translateY(150px);
+    transform: translateY(0px);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    transform: translateY(200px);
     opacity: 1;
   }
 }
