@@ -42,7 +42,7 @@ section #functioning #card {
 section #functioning #card .card-text {
   position: relative;
   justify-content: center;
-  margin: 0px 10px 0px 10px;
+  margin: 30px 10px 30px 10px;
 }
 section #functioning #card .card-text figcaption {
   position: absolute;
@@ -71,14 +71,14 @@ section #restaurants #card-restaurants a {
 section #restaurants #card-restaurants .card {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 30px 10px 30px 10px;
 }
 section #restaurants #card-restaurants .card .text-card {
   margin-bottom: unset;
   font-size: 18px;
 }
 section #restaurants #card-restaurants .card-image {
-  width: 220px;
+  width: 217px;
 }
 
 footer {

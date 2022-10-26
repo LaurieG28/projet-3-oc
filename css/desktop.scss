@@ -57,7 +57,7 @@ section {
       .card-text {
         position: relative;
         justify-content: center;
-        margin: 0px 10px 0px 10px;
+        margin: 30px 10px 30px 10px;
 
         figcaption {
           position: absolute;
@@ -92,7 +92,7 @@ section {
       .card {
         display: flex;
         flex-direction: column;
-        margin: 10px;
+        margin: 30px 10px 30px 10px;
 
         .text-card {
           margin-bottom: unset;
@@ -101,7 +101,7 @@ section {
       }
 
       .card-image {
-        width: 220px;
+        width: 217px;
       }
     }
   }
