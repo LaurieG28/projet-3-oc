@@ -73,17 +73,39 @@ main {
   border-top-left-radius: 20px;
   padding-top: 20px;
 }
+main #title {
+  display: flex;
+  width: 100%;
+}
+main #title h1 {
+  margin: 0px;
+  padding-left: 20px;
+}
 main section {
   background-color: #f6f6f6;
   padding: 0px;
 }
-main section #title {
-  display: flex;
-  width: 100%;
+main section a {
+  -webkit-animation: slideDown 1s;
+          animation: slideDown 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
-main section #title h1 {
-  margin: 0px;
-  padding-left: 20px;
+main section a:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+main section a:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+main section a:nth-child(4) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+main section a:nth-child(5) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 main section .fa-regular {
   position: absolute;
@@ -97,22 +119,22 @@ main section .fa-regular:hover {
           background-clip: text;
   color: transparent;
 }
+main section h5 {
+  margin-left: 20px;
+  font-weight: unset;
+}
 main section #starters .starters-card {
   display: flex;
   flex-direction: column;
 }
-main h5 {
-  margin-left: 20px;
-  font-weight: unset;
-}
-main #order-button {
+main section #order-button {
   text-decoration: none;
 }
-main #order-button div {
+main section #order-button div {
   display: flex;
   justify-content: center;
 }
-main #order-button div input {
+main section #order-button div input {
   background: linear-gradient(#ff79da, #9356dc);
   color: white;
   height: 60px;
@@ -130,20 +152,21 @@ main #order-button div input {
 .card {
   text-decoration: none;
   color: black;
-}
-.card .name-card {
   background-color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 30px;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 20px;
   border-radius: 15px;
-  -webkit-animation: slideDown 3s;
-          animation: slideDown 3s;
-  transition-color: #99e2d0 3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card .name-card {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 30px;
+  width: 100%;
 }
 .card .name-card p {
   margin: 0px;
@@ -152,33 +175,45 @@ main #order-button div input {
   margin-top: 3px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 .card .name-card .price-card p {
   font-size: 15px;
 }
+.card .name-card .price-card p:nth-child(1) {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.card .check-price {
+  display: flex;
+  color: white;
+  width: 0px;
+  background-color: #99e2d0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+.card .check-price i {
+  display: none;
+  font-size: 20px;
+}
 
-.name-card:hover {
-  transition: transform, margin-right, ease-in-out 3s;
+.card:hover .check-price {
+  width: 80px;
+  animation: slideLeft 1s;
+  -webkit-animation: slideLeft 1s;
+  -o-animation: slideLeft 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
-@-webkit-keyframes slideDown {
-  from {
-    transform: translateY(150px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-@keyframes slideDown {
-  from {
-    transform: translateY(150px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0px);
-    opacity: 1;
-  }
+.card:hover .check-price i {
+  display: block;
+  -webkit-animation: spin 0.6s linear;
+  animation: spin 0.6s linear;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 #order-button {
@@ -200,4 +235,50 @@ main #order-button div input {
   margin-top: 30px;
   margin-bottom: 40px;
   cursor: pointer;
+}
+
+@-webkit-keyframes slideDown {
+  from {
+    transform: translateY(5px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(5px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideLeft {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 80px;
+  }
+}
+@keyframes slideLeft {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 80px;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=restaurants.css.map */

@@ -90,18 +90,39 @@ main {
   border-top-left-radius: 20px;
   padding-top: 20px;
 
+  #title {
+    display: flex;
+    width: 100%;
+
+    h1 {
+      margin: 0px;
+      padding-left: 20px;
+    }
+  }
+
   section {
     background-color: $grey-light;
     padding: 0px;
 
-    #title {
-      display: flex;
-      width: 100%;
+    a {
+      animation: slideDown 1s;
+      animation-fill-mode: both;
+    }
 
-      h1 {
-        margin: 0px;
-        padding-left: 20px;
-      }
+    a:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    a:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    a:nth-child(4) {
+      animation-delay: 0.6s;
+    }
+
+    a:nth-child(5) {
+      animation-delay: 0.8s;
     }
 
     .fa-regular {
@@ -117,60 +138,63 @@ main {
       color: transparent;
     }
 
+    h5 {
+      margin-left: 20px;
+      font-weight: unset;
+    }
+
     #starters {
       .starters-card {
         display: flex;
         flex-direction: column;
       }
     }
-  }
 
-  h5 {
-    margin-left: 20px;
-    font-weight: unset;
-  }
+    #order-button {
+      text-decoration: none;
 
-  #order-button {
-    text-decoration: none;
+      div {
+        display: flex;
+        justify-content: center;
 
-    div {
-      display: flex;
-      justify-content: center;
-
-      input {
-        background: linear-gradient(#ff79da, #9356dc);
-        color: white;
-        height: 60px;
-        width: 210px;
-        border-radius: 35px;
-        font-size: medium;
-        text-decoration: none;
-        line-height: 60px;
-        border: 0px;
-        margin-top: 30px;
-        margin-bottom: 40px;
-        cursor: pointer;
+        input {
+          background: linear-gradient(#ff79da, #9356dc);
+          color: white;
+          height: 60px;
+          width: 210px;
+          border-radius: 35px;
+          font-size: medium;
+          text-decoration: none;
+          line-height: 60px;
+          border: 0px;
+          margin-top: 30px;
+          margin-bottom: 40px;
+          cursor: pointer;
+        }
       }
     }
   }
 }
 
 .card {
+  // transition-color: $tertiary 2s;
   text-decoration: none;
   color: black;
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
   .name-card {
-    background-color: white;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    animation: slideDown 3s;
-    transition-color: $tertiary 3s;
+    width: 100%;
 
     p {
       margin: 0px;
@@ -180,26 +204,53 @@ main {
       margin-top: 3px;
       display: flex;
       justify-content: space-between;
+      flex-wrap: nowrap;
 
       p {
         font-size: 15px;
       }
+
+      p:nth-child(1) {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .check-price {
+    display: flex;
+    color: white;
+    width: 0px;
+    background-color: $tertiary;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    justify-content: space-around;
+    align-items: center;
+
+    i {
+      display: none;
+      font-size: 20px;
     }
   }
 }
 
-.name-card:hover {
-  @keyframes slideDown {
-    from {
-      transform: translateY(150px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0px);
-      opacity: 1;
+.card:hover {
+  .check-price {
+    width: 80px;
+    animation: slideLeft 1s;
+    -webkit-animation: slideLeft 1s;
+    -o-animation: slideLeft 1s;
+    animation-fill-mode: both;
+
+    i {
+      display: block;
+      -webkit-animation: spin 0.6s linear;
+      -o-animation: spin 0.6s linear;
+      animation: spin 0.6s linear;
+      animation-fill-mode: both;
     }
   }
-  transition: transform, margin-right, ease-in-out 3s;
 }
 
 #order-button {
@@ -221,5 +272,35 @@ main {
     margin-top: 30px;
     margin-bottom: 40px;
     cursor: pointer;
+  }
+}
+
+// Animations
+@keyframes slideDown {
+  from {
+    transform: translateY(5px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 80px;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
