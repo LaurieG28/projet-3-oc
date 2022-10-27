@@ -12,13 +12,13 @@ body {
   .loading-spinner {
     /*création du loading-spinner*/
 
-    border-top: 10px solid $primary;
-    border-bottom: 10px solid $secondary;
-    border-right: 10px solid $tertiary;
-    border-left: 10px solid $tertiary;
+    border-top: 2px solid $primary;
+    border-bottom: 2px solid $secondary;
+    border-right: 2px solid $tertiary;
+    border-left: 2px solid $tertiary;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 5px;
+    height: 5px;
     -webkit-animation: spin 3s linear infinite;
     -o-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
@@ -53,6 +53,7 @@ body {
     }
   }
 }
+
 /*header*/
 .title {
   font-family: "Shrikhand", sans-serif;
