@@ -8,6 +8,50 @@ $primary-light: #f2e8ff;
 
 body {
   background-color: $grey-light;
+
+  .loading-spinner {
+    /*création du loading-spinner*/
+
+    border-top: 10px solid $primary;
+    border-bottom: 10px solid $secondary;
+    border-right: 10px solid $tertiary;
+    border-left: 10px solid $tertiary;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 3s linear infinite;
+    -o-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+
+    /*placement au mileu de la page*/
+
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  /*animation loader*/
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
 }
 /*header*/
 .title {
@@ -124,7 +168,8 @@ main {
     margin-right: 10px;
     margin-bottom: 20px;
     border-radius: 15px;
-    animation: slideDown 5s;
+    animation: slideDown 3s;
+    transition-color: $tertiary 3s;
 
     p {
       margin: 0px;
@@ -145,7 +190,7 @@ main {
 .name-card:hover {
   @keyframes slideDown {
     from {
-      transform: translateY(200px);
+      transform: translateY(150px);
       opacity: 0;
     }
     to {
@@ -153,6 +198,7 @@ main {
       opacity: 1;
     }
   }
+  transition: transform, margin-right, ease-in-out 3s;
 }
 
 #order-button {

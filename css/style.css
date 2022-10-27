@@ -4,6 +4,42 @@ body {
   margin: 0px;
   font-family: "roboto", sans-serif;
   background-color: white;
+  /*animation loader*/
+}
+body .loading-spinner {
+  /*création du loading-spinner*/
+  border-top: 10px solid #9356dc;
+  border-bottom: 10px solid #ff79da;
+  border-right: 10px solid #99e2d0;
+  border-left: 10px solid #99e2d0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+  /*placement au mileu de la page*/
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 main {
