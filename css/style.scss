@@ -248,52 +248,64 @@ body {
           }
         }
 
-        .fa-solid {
+        span {
           position: absolute;
           top: 15px;
           right: 20px;
-          font-size: 20px;
         }
 
-        .fa-solid:hover {
+        span:hover {
           cursor: pointer;
-          background: linear-gradient(#9356dc, #ff79da);
+          background-color: linear-gradient(#9356dc, #ff79da);
           background-clip: text;
           color: transparent;
+          animation: hover 1s ease-in-out;
+          -webkit-animation: hover 1s ease-in-out;
+          -o-animation: hover 1s ease-in-out;
         }
       }
     }
   }
+}
 
-  /*footer*/
+@keyframes hover {
+  from {
+    opacity: 1;
+  }
 
-  footer {
-    background-color: $grey-dark;
-    color: white;
-    padding: 20px;
+  to {
+    opacity: 0;
+  }
+}
 
-    h2 {
-      font-family: "shrikhand";
-      padding-top: 10px;
-      font-size: medium;
-    }
+/*footer*/
 
-    ul {
-      padding-left: 0px;
-      font-size: small;
+footer {
+  background-color: $grey-dark;
+  color: white;
+  padding: 20px;
 
-      a {
-        text-decoration: none;
+  h2 {
+    font-family: "shrikhand";
+    padding-top: 10px;
+    font-size: medium;
+  }
 
-        li {
-          color: white;
-          list-style-type: none;
-          padding-bottom: 10px;
+  ul {
+    padding-left: 0px;
+    font-size: small;
 
-          i {
-            font-size: 10px;
-            width: 18px;
-          }
+    a {
+      text-decoration: none;
+
+      li {
+        color: white;
+        list-style-type: none;
+        padding-bottom: 10px;
+
+        i {
+          font-size: 10px;
+          width: 18px;
         }
       }
     }

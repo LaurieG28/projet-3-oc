@@ -90,6 +90,7 @@ main section a {
           animation: slideDown 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+  background-color: white;
 }
 main section a:nth-child(2) {
   -webkit-animation-delay: 0.2s;
@@ -107,17 +108,20 @@ main section a:nth-child(5) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
-main section .fa-regular {
+main section span {
   position: absolute;
   top: 30px;
   right: 40px;
 }
-main section .fa-regular:hover {
+main section span:hover {
   cursor: pointer;
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+  animation: hover 1s ease-in;
+  -webkit-animation: hover 1s ease-in;
+  -o-animation: hover 1s ease-in;
 }
 main section h5 {
   margin-left: 20px;
@@ -149,10 +153,26 @@ main section #order-button div input {
   cursor: pointer;
 }
 
+@-webkit-keyframes hover {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hover {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .card {
   text-decoration: none;
   color: black;
-  background-color: white;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 20px;
@@ -167,6 +187,8 @@ main section #order-button div input {
   padding-left: 10px;
   padding-right: 30px;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .card .name-card p {
   margin: 0px;
@@ -183,7 +205,6 @@ main section #order-button div input {
 .card .name-card .price-card p:nth-child(1) {
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
 }
 .card .check-price {
   display: flex;
@@ -210,8 +231,8 @@ main section #order-button div input {
 }
 .card:hover .check-price i {
   display: block;
-  -webkit-animation: spin 0.6s linear;
-  animation: spin 0.6s linear;
+  -webkit-animation: spin 0.6s ease-in-out;
+  animation: spin 0.6s ease-in-out;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }

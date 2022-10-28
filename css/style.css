@@ -4,7 +4,6 @@ body {
   margin: 0px;
   font-family: "roboto", sans-serif;
   background-color: white;
-  /*footer*/
 }
 body main {
   background-color: #f6f6f6;
@@ -215,42 +214,63 @@ body #restaurants #card-restaurants .text-card .restaurants-name {
 body #restaurants #card-restaurants .text-card .restaurants-name p {
   margin: 0px;
 }
-body #restaurants #card-restaurants .text-card .fa-solid {
+body #restaurants #card-restaurants .text-card span {
   position: absolute;
   top: 15px;
   right: 20px;
-  font-size: 20px;
 }
-body #restaurants #card-restaurants .text-card .fa-solid:hover {
+body #restaurants #card-restaurants .text-card span:hover {
   cursor: pointer;
-  background: linear-gradient(#9356dc, #ff79da);
+  background-color: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+  animation: hover 1s ease-in-out;
+  -webkit-animation: hover 1s ease-in-out;
+  -o-animation: hover 1s ease-in-out;
 }
-body footer {
+
+@-webkit-keyframes hover {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes hover {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/*footer*/
+footer {
   background-color: #353535;
   color: white;
   padding: 20px;
 }
-body footer h2 {
+footer h2 {
   font-family: "shrikhand";
   padding-top: 10px;
   font-size: medium;
 }
-body footer ul {
+footer ul {
   padding-left: 0px;
   font-size: small;
 }
-body footer ul a {
+footer ul a {
   text-decoration: none;
 }
-body footer ul a li {
+footer ul a li {
   color: white;
   list-style-type: none;
   padding-bottom: 10px;
 }
-body footer ul a li i {
+footer ul a li i {
   font-size: 10px;
   width: 18px;
 }/*# sourceMappingURL=style.css.map */
