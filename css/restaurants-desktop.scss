@@ -8,20 +8,25 @@ $primary-light: #f2e8ff;
 $green-dark: #008766;
 
 main {
-  section {
-    #starters {
-      display: flex;
-      justify-content: center;
-    }
+  .sections {
+    display: flex;
+    flex-direction: row;
 
-    #dishes {
-      display: flex;
-      justify-content: center;
-    }
+    section {
+      #starters {
+        display: flex;
+        justify-content: center;
+      }
 
-    #desserts {
-      display: flex;
-      justify-content: center;
+      #dishes {
+        display: flex;
+        justify-content: center;
+      }
+
+      #desserts {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 }

@@ -248,33 +248,20 @@ body {
           }
         }
 
-        span {
+        .material-symbols-outlined {
           position: absolute;
           top: 15px;
           right: 20px;
         }
 
-        span:hover {
+        .material-symbols-outlined:hover {
           cursor: pointer;
-          background-color: linear-gradient(#9356dc, #ff79da);
-          background-clip: text;
-          color: transparent;
-          animation: hover 1s ease-in-out;
-          -webkit-animation: hover 1s ease-in-out;
-          -o-animation: hover 1s ease-in-out;
+          animation: hover 0.3s forwards ease-in;
+          -webkit-animation: hover 0.3s forwards ease-in;
+          -o-animation: hover 0.3s forwards ease-in;
         }
       }
     }
-  }
-}
-
-@keyframes hover {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
   }
 }
 
@@ -309,5 +296,22 @@ footer {
         }
       }
     }
+  }
+}
+
+// Animations
+@keyframes hover {
+  from {
+    background: linear-gradient(283deg, #ff79da 0%, #9356dc 100%);
+    background-clip: text;
+    color: transparent;
+    font-variation-settings: "FILL" 0;
+  }
+
+  to {
+    background: linear-gradient(283deg, #ff79da 0%, #9356dc 100%);
+    background-clip: text;
+    color: transparent;
+    font-variation-settings: "FILL" 1;
   }
 }

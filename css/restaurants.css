@@ -39,11 +39,6 @@ body .loading-spinner {
   }
 }
 
-/*header*/
-.title {
-  font-family: "Shrikhand", sans-serif;
-}
-
 #logo {
   width: 100%;
   position: inherit;
@@ -65,8 +60,6 @@ body .loading-spinner {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
   position: relative;
   top: -50px;
   border-top-right-radius: 20px;
@@ -74,71 +67,73 @@ main {
   padding-top: 20px;
 }
 main #title {
+  font-family: "Shrikhand", sans-serif;
   display: flex;
-  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 main #title h1 {
+  font-size: 24px;
   margin: 0px;
   padding-left: 20px;
 }
-main section {
+main #title .material-symbols-outlined {
+  margin-right: 10px;
+}
+main #title .material-symbols-outlined:hover {
+  cursor: pointer;
+  animation: hover 0.3s forwards ease-in;
+  -webkit-animation: hover 0.3s forwards ease-in;
+  -o-animation: hover 0.3s forwards ease-in;
+}
+main .sections {
+  display: flex;
+  flex-direction: column;
+}
+main .sections section {
   background-color: #f6f6f6;
   padding: 0px;
 }
-main section a {
+main .sections section a {
   -webkit-animation: slideDown 1s;
           animation: slideDown 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   background-color: white;
 }
-main section a:nth-child(2) {
+main .sections section a:nth-child(2) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
-main section a:nth-child(3) {
+main .sections section a:nth-child(3) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
-main section a:nth-child(4) {
+main .sections section a:nth-child(4) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
-main section a:nth-child(5) {
+main .sections section a:nth-child(5) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
-main section span {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-}
-main section span:hover {
-  cursor: pointer;
-  background: linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-  animation: hover 1s ease-in;
-  -webkit-animation: hover 1s ease-in;
-  -o-animation: hover 1s ease-in;
-}
-main section h5 {
+main .sections section h5 {
   margin-left: 20px;
   font-weight: unset;
 }
-main section #starters .starters-card {
+main .sections section #starters .starters-card {
   display: flex;
   flex-direction: column;
 }
-main section #order-button {
+main .sections section #order-button {
   text-decoration: none;
 }
-main section #order-button div {
+main .sections section #order-button div {
   display: flex;
   justify-content: center;
 }
-main section #order-button div input {
+main .sections section #order-button div input {
   background: linear-gradient(#ff79da, #9356dc);
   color: white;
   height: 60px;
@@ -153,23 +148,6 @@ main section #order-button div input {
   cursor: pointer;
 }
 
-@-webkit-keyframes hover {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes hover {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .card {
   text-decoration: none;
   color: black;
@@ -298,8 +276,13 @@ main section #order-button div input {
 @keyframes spin {
   0% {
     transform: rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
+    opacity: 1;
   }
 }/*# sourceMappingURL=restaurants.css.map */

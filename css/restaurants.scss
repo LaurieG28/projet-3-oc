@@ -54,11 +54,6 @@ body {
   }
 }
 
-/*header*/
-.title {
-  font-family: "Shrikhand", sans-serif;
-}
-
 #logo {
   width: 100%;
   position: inherit;
@@ -82,8 +77,6 @@ body {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
   position: relative;
   top: -50px;
   border-top-right-radius: 20px;
@@ -91,102 +84,96 @@ main {
   padding-top: 20px;
 
   #title {
+    font-family: "Shrikhand", sans-serif;
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
     h1 {
+      font-size: 24px;
       margin: 0px;
       padding-left: 20px;
     }
+
+    .material-symbols-outlined {
+      margin-right: 10px;
+    }
+
+    .material-symbols-outlined:hover {
+      cursor: pointer;
+      animation: hover 0.3s forwards ease-in;
+      -webkit-animation: hover 0.3s forwards ease-in;
+      -o-animation: hover 0.3s forwards ease-in;
+    }
   }
 
-  section {
-    background-color: $grey-light;
-    padding: 0px;
+  .sections {
+    display: flex;
+    flex-direction: column;
 
-    a {
-      animation: slideDown 1s;
-      animation-fill-mode: both;
-      background-color: white;
-    }
+    section {
+      background-color: $grey-light;
+      padding: 0px;
 
-    a:nth-child(2) {
-      animation-delay: 0.2s;
-    }
-
-    a:nth-child(3) {
-      animation-delay: 0.4s;
-    }
-
-    a:nth-child(4) {
-      animation-delay: 0.6s;
-    }
-
-    a:nth-child(5) {
-      animation-delay: 0.8s;
-    }
-
-    span {
-      position: absolute;
-      top: 30px;
-      right: 40px;
-    }
-
-    span:hover {
-      cursor: pointer;
-      background: linear-gradient(#9356dc, #ff79da);
-      background-clip: text;
-      color: transparent;
-      animation: hover 1s ease-in;
-      -webkit-animation: hover 1s ease-in;
-      -o-animation: hover 1s ease-in;
-    }
-
-    h5 {
-      margin-left: 20px;
-      font-weight: unset;
-    }
-
-    #starters {
-      .starters-card {
-        display: flex;
-        flex-direction: column;
+      a {
+        animation: slideDown 1s;
+        animation-fill-mode: both;
+        background-color: white;
       }
-    }
 
-    #order-button {
-      text-decoration: none;
+      a:nth-child(2) {
+        animation-delay: 0.2s;
+      }
 
-      div {
-        display: flex;
-        justify-content: center;
+      a:nth-child(3) {
+        animation-delay: 0.4s;
+      }
 
-        input {
-          background: linear-gradient(#ff79da, #9356dc);
-          color: white;
-          height: 60px;
-          width: 210px;
-          border-radius: 35px;
-          font-size: medium;
-          text-decoration: none;
-          line-height: 60px;
-          border: 0px;
-          margin-top: 30px;
-          margin-bottom: 40px;
-          cursor: pointer;
+      a:nth-child(4) {
+        animation-delay: 0.6s;
+      }
+
+      a:nth-child(5) {
+        animation-delay: 0.8s;
+      }
+
+      h5 {
+        margin-left: 20px;
+        font-weight: unset;
+      }
+
+      #starters {
+        .starters-card {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      #order-button {
+        text-decoration: none;
+
+        div {
+          display: flex;
+          justify-content: center;
+
+          input {
+            background: linear-gradient(#ff79da, #9356dc);
+            color: white;
+            height: 60px;
+            width: 210px;
+            border-radius: 35px;
+            font-size: medium;
+            text-decoration: none;
+            line-height: 60px;
+            border: 0px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            cursor: pointer;
+          }
         }
       }
     }
-  }
-}
-
-@keyframes hover {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
   }
 }
 
@@ -313,8 +300,13 @@ main {
 @keyframes spin {
   0% {
     transform: rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
+    opacity: 1;
   }
 }

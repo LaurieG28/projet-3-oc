@@ -214,39 +214,18 @@ body #restaurants #card-restaurants .text-card .restaurants-name {
 body #restaurants #card-restaurants .text-card .restaurants-name p {
   margin: 0px;
 }
-body #restaurants #card-restaurants .text-card span {
+body #restaurants #card-restaurants .text-card .material-symbols-outlined {
   position: absolute;
   top: 15px;
   right: 20px;
 }
-body #restaurants #card-restaurants .text-card span:hover {
+body #restaurants #card-restaurants .text-card .material-symbols-outlined:hover {
   cursor: pointer;
-  background-color: linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-  animation: hover 1s ease-in-out;
-  -webkit-animation: hover 1s ease-in-out;
-  -o-animation: hover 1s ease-in-out;
+  animation: hover 0.3s forwards ease-in;
+  -webkit-animation: hover 0.3s forwards ease-in;
+  -o-animation: hover 0.3s forwards ease-in;
 }
 
-@-webkit-keyframes hover {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes hover {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 /*footer*/
 footer {
   background-color: #353535;
@@ -273,4 +252,38 @@ footer ul a li {
 footer ul a li i {
   font-size: 10px;
   width: 18px;
+}
+
+@-webkit-keyframes hover {
+  from {
+    background: linear-gradient(283deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    font-variation-settings: "FILL" 0;
+  }
+  to {
+    background: linear-gradient(283deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    font-variation-settings: "FILL" 1;
+  }
+}
+
+@keyframes hover {
+  from {
+    background: linear-gradient(283deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    font-variation-settings: "FILL" 0;
+  }
+  to {
+    background: linear-gradient(283deg, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    font-variation-settings: "FILL" 1;
+  }
 }/*# sourceMappingURL=style.css.map */

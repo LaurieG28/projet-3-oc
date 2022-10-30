@@ -1,16 +1,17 @@
-main {
+main .sections {
+  display: flex;
   flex-direction: row;
 }
-main section #title h1 {
+main .sections section #title h1 {
   padding-left: 15px;
 }
-main section #dishes {
+main .sections section #dishes {
   margin: 60px 0px 0px 0px;
 }
-main section #desserts {
+main .sections section #desserts {
   margin: 60px 0px 0px 0px;
 }
-main section #order-button {
+main .sections section #order-button {
   position: relative;
   right: 260px;
   bottom: -30px;
