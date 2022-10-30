@@ -1,15 +1,13 @@
 main .sections {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+}
+main .sections section {
+  width: 33%;
 }
 main .sections section #title h1 {
   padding-left: 15px;
-}
-main .sections section #dishes {
-  margin: 60px 0px 0px 0px;
-}
-main .sections section #desserts {
-  margin: 60px 0px 0px 0px;
 }
 main .sections section #order-button {
   position: relative;

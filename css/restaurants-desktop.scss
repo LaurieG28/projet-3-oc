@@ -11,22 +11,10 @@ main {
   .sections {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 
     section {
-      #starters {
-        display: flex;
-        justify-content: center;
-      }
-
-      #dishes {
-        display: flex;
-        justify-content: center;
-      }
-
-      #desserts {
-        display: flex;
-        justify-content: center;
-      }
+      width: 33%;
     }
   }
 }

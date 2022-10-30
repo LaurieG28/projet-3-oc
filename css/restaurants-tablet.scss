@@ -11,20 +11,15 @@ main {
   .sections {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 
     section {
+      width: 33%;
+
       #title {
         h1 {
           padding-left: 15px;
         }
-      }
-
-      #dishes {
-        margin: 60px 0px 0px 0px;
-      }
-
-      #desserts {
-        margin: 60px 0px 0px 0px;
       }
 
       #order-button {

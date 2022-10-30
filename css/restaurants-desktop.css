@@ -1,16 +1,8 @@
 main .sections {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
-main .sections section #starters {
-  display: flex;
-  justify-content: center;
-}
-main .sections section #dishes {
-  display: flex;
-  justify-content: center;
-}
-main .sections section #desserts {
-  display: flex;
-  justify-content: center;
+main .sections section {
+  width: 33%;
 }/*# sourceMappingURL=restaurants-desktop.css.map */
