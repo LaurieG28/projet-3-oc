@@ -7,6 +7,23 @@ $grey-light: #f6f6f6;
 $primary-light: #f2e8ff;
 $green-dark: #008766;
 
+nav {
+  #image {
+    img {
+      height: 400px;
+    }
+  }
+
+  #image {
+    img:hover {
+      cursor: pointer;
+      animation: expand 0.5s forwards ease-out;
+      -webkit-animation: expand 0.5s forwards ease-out;
+      -o-animation: expand 0.5s forwards ease-out;
+    }
+  }
+}
+
 main {
   .sections {
     display: flex;
@@ -16,5 +33,11 @@ main {
     section {
       width: 33%;
     }
+  }
+}
+
+@keyframes expand {
+  to {
+    height: 600px;
   }
 }

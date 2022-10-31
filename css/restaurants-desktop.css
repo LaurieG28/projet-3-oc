@@ -1,3 +1,13 @@
+nav #image img {
+  height: 400px;
+}
+nav #image img:hover {
+  cursor: pointer;
+  animation: expand 0.5s forwards ease-out;
+  -webkit-animation: expand 0.5s forwards ease-out;
+  -o-animation: expand 0.5s forwards ease-out;
+}
+
 main .sections {
   display: flex;
   flex-direction: row;
@@ -5,4 +15,16 @@ main .sections {
 }
 main .sections section {
   width: 33%;
+}
+
+@-webkit-keyframes expand {
+  to {
+    height: 600px;
+  }
+}
+
+@keyframes expand {
+  to {
+    height: 600px;
+  }
 }/*# sourceMappingURL=restaurants-desktop.css.map */
