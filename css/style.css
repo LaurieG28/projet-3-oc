@@ -86,6 +86,13 @@ body #explorer-button a {
   text-decoration: none;
   line-height: 55px;
 }
+body #explorer-button a:hover {
+  background: linear-gradient(#f2e8ff, #fbb3e6);
+  box-shadow: 0px 0px 0px 3px #fbb3e6;
+  animation: clearing 0.5s forwards;
+  -webkit-animation: clearing 0.5s forwards;
+  -o-animation: clearing 0.5s forwards;
+}
 body section {
   background-color: white;
   padding-top: 30px;
@@ -140,6 +147,9 @@ body section .card-text a {
 body section .card-text:hover {
   background-color: #f2e8ff;
   cursor: pointer;
+  animation: pulse 1s forwards;
+  -webkit-animation: pulse 1s forwards;
+  -o-animation: pulse 1s forwards;
 }
 body section .icon:hover {
   color: #9356dc;
@@ -162,7 +172,6 @@ body #restaurants #card-restaurants .card {
   display: contents;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow: #eaeaea 0px 15px 20px 0px;
 }
 body #restaurants #card-restaurants .card-image {
   position: relative;
@@ -185,6 +194,11 @@ body #restaurants #card-restaurants .card-image .new {
   font-size: 13px;
   font-weight: 600;
 }
+body #restaurants #card-restaurants .card-image:hover {
+  box-shadow: #353535 0px 25px 30px 0px;
+  -webkit-animation: shadow 0.5s forwards;
+          animation: shadow 0.5s forwards;
+}
 body #restaurants #card-restaurants img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -199,7 +213,7 @@ body #restaurants #card-restaurants .text-card {
   position: relative;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow: rgba(126, 121, 121, 0.25) 0px 5px 5px 0px;
+  box-shadow: #eaeaea 0px 15px 20px 0px;
   margin-bottom: 20px;
   background-color: white;
   font-size: 15px;
@@ -254,6 +268,45 @@ footer ul a li i {
   width: 18px;
 }
 
+@-webkit-keyframes clearing {
+  from {
+    background: linear-gradient(#f2e8ff, #fbb3e6);
+    box-shadow: 0px 0px 0px 3px #fbb3e6;
+  }
+  to {
+    background: linear-gradient(#f2e8ff, #fbb3e6);
+    box-shadow: 0px 0px 0px 18px #f2e8ff;
+    color: #a9f3e0;
+  }
+}
+
+@keyframes clearing {
+  from {
+    background: linear-gradient(#f2e8ff, #fbb3e6);
+    box-shadow: 0px 0px 0px 3px #fbb3e6;
+  }
+  to {
+    background: linear-gradient(#f2e8ff, #fbb3e6);
+    box-shadow: 0px 0px 0px 18px #f2e8ff;
+    color: #a9f3e0;
+  }
+}
+@-webkit-keyframes pulse {
+  from {
+    box-shadow: 0 0 0 5px #f2e8ff;
+  }
+  to {
+    box-shadow: 0 0 0 18px #9356dc 0, 0, 0, 0.01;
+  }
+}
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 5px #f2e8ff;
+  }
+  to {
+    box-shadow: 0 0 0 18px #9356dc 0, 0, 0, 0.01;
+  }
+}
 @-webkit-keyframes hover {
   from {
     background: linear-gradient(283deg, #ff79da 0%, #9356dc 100%);
@@ -270,7 +323,6 @@ footer ul a li i {
     font-variation-settings: "FILL" 1;
   }
 }
-
 @keyframes hover {
   from {
     background: linear-gradient(283deg, #ff79da 0%, #9356dc 100%);

@@ -6,6 +6,8 @@ $grey-dark: #353535;
 $grey-light: #f6f6f6;
 $primary-light: #f2e8ff;
 $green-dark: #008766;
+$secondary-light: #fbb3e6;
+$tertiary-light: #a9f3e0;
 
 /*Général*/
 body {
@@ -105,6 +107,14 @@ body {
       text-decoration: none;
       line-height: 55px;
     }
+
+    a:hover {
+      background: linear-gradient($primary-light, $secondary-light);
+      box-shadow: 0px 0px 0px 3px #fbb3e6;
+      animation: clearing 0.5s forwards;
+      -webkit-animation: clearing 0.5s forwards;
+      -o-animation: clearing 0.5s forwards;
+    }
   }
 
   section {
@@ -168,6 +178,9 @@ body {
     .card-text:hover {
       background-color: $primary-light;
       cursor: pointer;
+      animation: pulse 1s forwards;
+      -webkit-animation: pulse 1s forwards;
+      -o-animation: pulse 1s forwards;
     }
 
     .icon:hover {
@@ -192,7 +205,6 @@ body {
         color: black;
         display: contents;
         object-fit: cover;
-        box-shadow: $grey 0px 15px 20px 0px;
       }
 
       .card-image {
@@ -218,6 +230,11 @@ body {
         }
       }
 
+      .card-image:hover {
+        box-shadow: $grey-dark 0px 25px 30px 0px;
+        animation: shadow 0.5s forwards;
+      }
+
       img {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -231,7 +248,7 @@ body {
         position: relative;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        box-shadow: rgb(126 121 121 / 25%) 0px 5px 5px 0px;
+        box-shadow: $grey 0px 15px 20px 0px;
         margin-bottom: 20px;
         background-color: white;
         font-size: 15px;
@@ -300,6 +317,29 @@ footer {
 }
 
 // Animations
+
+@keyframes clearing {
+  from {
+    background: linear-gradient($primary-light, $secondary-light);
+    box-shadow: 0px 0px 0px 3px #fbb3e6;
+  }
+
+  to {
+    background: linear-gradient($primary-light, $secondary-light);
+    box-shadow: 0px 0px 0px 18px $primary-light;
+    color: $tertiary-light;
+  }
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 5px $primary-light;
+  }
+
+  to {
+    box-shadow: 0 0 0 18px $primary(0, 0, 0, 0.01);
+  }
+}
 @keyframes hover {
   from {
     background: linear-gradient(283deg, #ff79da 0%, #9356dc 100%);
