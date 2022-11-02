@@ -102,6 +102,12 @@ main .sections section a {
           animation-fill-mode: both;
   background-color: white;
 }
+main .sections section a:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 0px #eaeaea;
+  -webkit-animation: shadow 0.1s forwards ease-in;
+          animation: shadow 0.1s forwards ease-in;
+}
 main .sections section a:nth-child(2) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
@@ -132,20 +138,6 @@ main .sections section #order-button {
 main .sections section #order-button div {
   display: flex;
   justify-content: center;
-}
-main .sections section #order-button div input {
-  background: linear-gradient(#ff79da, #9356dc);
-  color: white;
-  height: 60px;
-  width: 210px;
-  border-radius: 35px;
-  font-size: medium;
-  text-decoration: none;
-  line-height: 60px;
-  border: 0px;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  cursor: pointer;
 }
 
 .card {
@@ -235,6 +227,13 @@ main .sections section #order-button div input {
   margin-bottom: 40px;
   cursor: pointer;
 }
+#order-button input:hover {
+  background: linear-gradient(#f2e8ff, #fbb3e6);
+  box-shadow: 0px 0px 0px 3px #fbb3e6;
+  animation: clearing 0.5s forwards;
+  -webkit-animation: clearing 0.5s forwards;
+  -o-animation: clearing 0.5s forwards;
+}
 
 @-webkit-keyframes slideDown {
   from {
@@ -284,5 +283,39 @@ main .sections section #order-button div input {
   100% {
     transform: rotate(360deg);
     opacity: 1;
+  }
+}
+@-webkit-keyframes shadow {
+  to {
+    box-shadow: 0px 0px 9px 0px #353535;
+    color: #ff79da;
+  }
+}
+@keyframes shadow {
+  to {
+    box-shadow: 0px 0px 9px 0px #353535;
+    color: #ff79da;
+  }
+}
+@-webkit-keyframes clearing {
+  from {
+    background: linear-gradient(#f2e8ff, #fbb3e6);
+    box-shadow: 0px 0px 0px 3px #fbb3e6;
+  }
+  to {
+    background: linear-gradient(#f2e8ff, #fbb3e6);
+    box-shadow: 0px 0px 0px 18px #f2e8ff;
+    color: #a9f3e0;
+  }
+}
+@keyframes clearing {
+  from {
+    background: linear-gradient(#f2e8ff, #fbb3e6);
+    box-shadow: 0px 0px 0px 3px #fbb3e6;
+  }
+  to {
+    background: linear-gradient(#f2e8ff, #fbb3e6);
+    box-shadow: 0px 0px 0px 18px #f2e8ff;
+    color: #a9f3e0;
   }
 }/*# sourceMappingURL=restaurants.css.map */
