@@ -214,8 +214,8 @@ body {
 
       .card:hover {
         cursor: pointer;
-        box-shadow: 0 0 0 5px $grey-dark;
-        animation: shadow 0.5s forwards ease-in;
+        box-shadow: 0px 0px 3px 0px #94939300;
+        animation: shadow 0.3s forwards ease-in;
       }
 
       .card-image {
@@ -364,7 +364,7 @@ footer {
 @keyframes shadow {
   to {
     border-radius: 20px;
-    box-shadow: 0 0 0 10px $tertiary;
+    box-shadow: 0px 0px 9px 0px #353535a3;
     color: $primary;
   }
 }

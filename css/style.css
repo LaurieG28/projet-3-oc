@@ -179,9 +179,9 @@ body #restaurants #card-restaurants a .card {
 }
 body #restaurants #card-restaurants .card:hover {
   cursor: pointer;
-  box-shadow: 0 0 0 5px #353535;
-  -webkit-animation: shadow 0.5s forwards ease-in;
-          animation: shadow 0.5s forwards ease-in;
+  box-shadow: 0px 0px 3px 0px rgba(148, 147, 147, 0);
+  -webkit-animation: shadow 0.3s forwards ease-in;
+          animation: shadow 0.3s forwards ease-in;
 }
 body #restaurants #card-restaurants .card-image {
   position: relative;
@@ -345,14 +345,14 @@ footer ul a li i {
 @-webkit-keyframes shadow {
   to {
     border-radius: 20px;
-    box-shadow: 0 0 0 10px #99e2d0;
+    box-shadow: 0px 0px 9px 0px rgba(53, 53, 53, 0.6392156863);
     color: #9356dc;
   }
 }
 @keyframes shadow {
   to {
     border-radius: 20px;
-    box-shadow: 0 0 0 10px #99e2d0;
+    box-shadow: 0px 0px 9px 0px rgba(53, 53, 53, 0.6392156863);
     color: #9356dc;
   }
 }/*# sourceMappingURL=style.css.map */
