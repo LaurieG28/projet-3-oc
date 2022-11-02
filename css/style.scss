@@ -201,17 +201,28 @@ body {
       display: flex;
       flex-direction: column;
 
-      .card {
+      a {
+        text-decoration: none;
         color: black;
-        display: contents;
-        object-fit: cover;
+
+        .card {
+          color: black;
+          display: contents;
+          object-fit: cover;
+        }
+      }
+
+      .card:hover {
+        cursor: pointer;
+        box-shadow: 0 0 0 5px $grey-dark;
+        animation: shadow 0.5s forwards ease-in;
       }
 
       .card-image {
         position: relative;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        box-shadow: $grey 0px 15px 20px 0px;
+
         background-color: white;
 
         .new {
@@ -230,11 +241,6 @@ body {
         }
       }
 
-      .card-image:hover {
-        box-shadow: $grey-dark 0px 25px 30px 0px;
-        animation: shadow 0.5s forwards;
-      }
-
       img {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -248,7 +254,6 @@ body {
         position: relative;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        box-shadow: $grey 0px 15px 20px 0px;
         margin-bottom: 20px;
         background-color: white;
         font-size: 15px;
@@ -353,5 +358,13 @@ footer {
     background-clip: text;
     color: transparent;
     font-variation-settings: "FILL" 1;
+  }
+}
+
+@keyframes shadow {
+  to {
+    border-radius: 20px;
+    box-shadow: 0 0 0 10px $tertiary;
+    color: $primary;
   }
 }

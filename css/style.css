@@ -167,17 +167,26 @@ body #restaurants #card-restaurants {
   display: flex;
   flex-direction: column;
 }
-body #restaurants #card-restaurants .card {
+body #restaurants #card-restaurants a {
+  text-decoration: none;
+  color: black;
+}
+body #restaurants #card-restaurants a .card {
   color: black;
   display: contents;
   -o-object-fit: cover;
      object-fit: cover;
 }
+body #restaurants #card-restaurants .card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 5px #353535;
+  -webkit-animation: shadow 0.5s forwards ease-in;
+          animation: shadow 0.5s forwards ease-in;
+}
 body #restaurants #card-restaurants .card-image {
   position: relative;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  box-shadow: #eaeaea 0px 15px 20px 0px;
   background-color: white;
 }
 body #restaurants #card-restaurants .card-image .new {
@@ -194,11 +203,6 @@ body #restaurants #card-restaurants .card-image .new {
   font-size: 13px;
   font-weight: 600;
 }
-body #restaurants #card-restaurants .card-image:hover {
-  box-shadow: #353535 0px 25px 30px 0px;
-  -webkit-animation: shadow 0.5s forwards;
-          animation: shadow 0.5s forwards;
-}
 body #restaurants #card-restaurants img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -213,7 +217,6 @@ body #restaurants #card-restaurants .text-card {
   position: relative;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow: #eaeaea 0px 15px 20px 0px;
   margin-bottom: 20px;
   background-color: white;
   font-size: 15px;
@@ -337,5 +340,19 @@ footer ul a li i {
             background-clip: text;
     color: transparent;
     font-variation-settings: "FILL" 1;
+  }
+}
+@-webkit-keyframes shadow {
+  to {
+    border-radius: 20px;
+    box-shadow: 0 0 0 10px #99e2d0;
+    color: #9356dc;
+  }
+}
+@keyframes shadow {
+  to {
+    border-radius: 20px;
+    box-shadow: 0 0 0 10px #99e2d0;
+    color: #9356dc;
   }
 }/*# sourceMappingURL=style.css.map */
