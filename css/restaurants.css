@@ -96,8 +96,8 @@ main .sections section {
   padding: 0px;
 }
 main .sections section a {
-  -webkit-animation: slideDown 1s;
-          animation: slideDown 1s;
+  -webkit-animation: slideDown 1s forwards;
+          animation: slideDown 1s forwards;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   background-color: white;
@@ -230,9 +230,9 @@ main .sections section #order-button div {
 #order-button input:hover {
   background: linear-gradient(#f2e8ff, #fbb3e6);
   box-shadow: 0px 0px 0px 3px #fbb3e6;
-  animation: clearing 0.5s forwards;
-  -webkit-animation: clearing 0.5s forwards;
-  -o-animation: clearing 0.5s forwards;
+  animation: clearing 1.5s infinite;
+  -webkit-animation: clearing 1.5s infinite;
+  -o-animation: clearing 1.5s infinite;
 }
 
 @-webkit-keyframes slideDown {
@@ -300,22 +300,20 @@ main .sections section #order-button div {
 @-webkit-keyframes clearing {
   from {
     background: linear-gradient(#f2e8ff, #fbb3e6);
-    box-shadow: 0px 0px 0px 3px #fbb3e6;
+    box-shadow: 0px 0px 0px 0px #fbb3e6;
   }
   to {
     background: linear-gradient(#f2e8ff, #fbb3e6);
-    box-shadow: 0px 0px 0px 18px #f2e8ff;
-    color: #a9f3e0;
+    box-shadow: 0px 0px 3px 10px rgba(242, 232, 255, 0.0117647059);
   }
 }
 @keyframes clearing {
   from {
     background: linear-gradient(#f2e8ff, #fbb3e6);
-    box-shadow: 0px 0px 0px 3px #fbb3e6;
+    box-shadow: 0px 0px 0px 0px #fbb3e6;
   }
   to {
     background: linear-gradient(#f2e8ff, #fbb3e6);
-    box-shadow: 0px 0px 0px 18px #f2e8ff;
-    color: #a9f3e0;
+    box-shadow: 0px 0px 3px 10px rgba(242, 232, 255, 0.0117647059);
   }
 }/*# sourceMappingURL=restaurants.css.map */

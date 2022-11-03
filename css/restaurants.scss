@@ -119,7 +119,7 @@ main {
       padding: 0px;
 
       a {
-        animation: slideDown 1s;
+        animation: slideDown 1s forwards;
         animation-fill-mode: both;
         background-color: white;
       }
@@ -270,10 +270,10 @@ main {
 
   input:hover {
     background: linear-gradient($primary-light, $secondary-light);
-    box-shadow: 0px 0px 0px 3px #fbb3e6;
-    animation: clearing 0.5s forwards;
-    -webkit-animation: clearing 0.5s forwards;
-    -o-animation: clearing 0.5s forwards;
+    box-shadow: 0px 0px 0px 3px $secondary-light;
+    animation: clearing 1.5s infinite;
+    -webkit-animation: clearing 1.5s infinite;
+    -o-animation: clearing 1.5s infinite;
   }
 }
 
@@ -322,12 +322,11 @@ main {
 @keyframes clearing {
   from {
     background: linear-gradient($primary-light, $secondary-light);
-    box-shadow: 0px 0px 0px 3px #fbb3e6;
+    box-shadow: 0px 0px 0px 0px $secondary-light;
   }
 
   to {
     background: linear-gradient($primary-light, $secondary-light);
-    box-shadow: 0px 0px 0px 18px $primary-light;
-    color: $tertiary-light;
+    box-shadow: 0px 0px 3px 10px #f2e8ff03;
   }
 }

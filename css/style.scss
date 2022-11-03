@@ -5,6 +5,8 @@ $grey: #eaeaea;
 $grey-dark: #353535;
 $grey-light: #f6f6f6;
 $primary-light: #f2e8ff;
+$secondary-light: #fbb3e6;
+$tertiary-light: #a9f3e0;
 $green-dark: #008766;
 
 /*Général*/
@@ -50,7 +52,7 @@ body {
     font-size: 13px;
     font-weight: bold;
     color: #404040;
-    padding: 15px;
+    padding: 15px 15px 15px 70px;
 
     #logo-location-bar {
       margin-right: 10px;
@@ -58,6 +60,14 @@ body {
 
     #location-name {
       margin-right: 15px;
+
+      form {
+        input {
+          border: none;
+          background-color: #eaeaea;
+          color: black;
+        }
+      }
     }
   }
 
@@ -108,10 +118,10 @@ body {
 
     a:hover {
       background: linear-gradient($primary-light, $secondary-light);
-      box-shadow: 0px 0px 0px 3px #fbb3e6;
-      animation: clearing 0.5s forwards;
-      -webkit-animation: clearing 0.5s forwards;
-      -o-animation: clearing 0.5s forwards;
+      box-shadow: 0px 0px 0px 3px $secondary-light;
+      animation: clearing 1.5s infinite;
+      -webkit-animation: clearing 1.5s infinite;
+      -o-animation: clearing 1.5s infinite;
     }
   }
 
@@ -202,6 +212,7 @@ body {
       a {
         text-decoration: none;
         color: black;
+        margin-bottom: 20px;
 
         .card {
           color: black;
@@ -252,7 +263,6 @@ body {
         position: relative;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        margin-bottom: 20px;
         background-color: white;
         font-size: 15px;
         padding-left: 10px;
@@ -294,8 +304,8 @@ footer {
 
   h2 {
     font-family: "shrikhand";
-    padding-top: 10px;
-    font-size: medium;
+    font-size: 25px;
+    margin-top: 0px;
   }
 
   ul {
@@ -309,6 +319,7 @@ footer {
         color: white;
         list-style-type: none;
         padding-bottom: 10px;
+        font-size: 15px;
 
         i {
           font-size: 10px;
@@ -324,13 +335,12 @@ footer {
 @keyframes clearing {
   from {
     background: linear-gradient($primary-light, $secondary-light);
-    box-shadow: 0px 0px 0px 3px #fbb3e6;
+    box-shadow: 0px 0px 0px 0px $secondary-light;
   }
 
   to {
     background: linear-gradient($primary-light, $secondary-light);
-    box-shadow: 0px 0px 0px 18px $primary-light;
-    color: $tertiary-light;
+    box-shadow: 0px 0px 3px 10px #f2e8ff03;
   }
 }
 
@@ -343,6 +353,7 @@ footer {
     box-shadow: 0 0 0 18px $primary(0, 0, 0, 0.01);
   }
 }
+
 @keyframes hover {
   from {
     background: linear-gradient(283deg, #ff79da 0%, #9356dc 100%);
