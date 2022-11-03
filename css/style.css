@@ -186,8 +186,9 @@ body #restaurants #card-restaurants a .card {
 body #restaurants #card-restaurants .card:hover {
   cursor: pointer;
   box-shadow: 0px 0px 3px 0px rgba(148, 147, 147, 0);
+  animation: shadow 0.3s forwards ease-in;
   -webkit-animation: shadow 0.3s forwards ease-in;
-          animation: shadow 0.3s forwards ease-in;
+  -o-animation: shadow 0.3s forwards ease-in;
 }
 body #restaurants #card-restaurants .card-image {
   position: relative;

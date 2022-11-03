@@ -1,7 +1,6 @@
 @charset "UTF-8";
 body {
   background-color: #f6f6f6;
-  /*animation loader*/
 }
 body .loading-spinner {
   /*création du loading-spinner*/
@@ -21,22 +20,6 @@ body .loading-spinner {
   left: 0;
   right: 0;
   bottom: 0;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
 }
 
 #logo {
@@ -96,33 +79,44 @@ main .sections section {
   padding: 0px;
 }
 main .sections section a {
-  -webkit-animation: slideDown 1s forwards;
-          animation: slideDown 1s forwards;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: slideDown 1s forwards;
+  animation-fill-mode: both;
   background-color: white;
+  -webkit-animation: slideDown 1s forwards;
+  -o-animation: slideDown 1s forwards;
+  -webkit-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
 }
 main .sections section a:hover {
   cursor: pointer;
   box-shadow: 0px 0px 3px 0px #eaeaea;
+  animation: shadow 0.1s forwards ease-in;
   -webkit-animation: shadow 0.1s forwards ease-in;
-          animation: shadow 0.1s forwards ease-in;
+  -o-animation: shadow 0.1s forwards ease-in;
 }
 main .sections section a:nth-child(2) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
+  -webkit-animation: 0.2s;
+  -o-animation: 0.2s;
 }
 main .sections section a:nth-child(3) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
+  -webkit-animation: 0.4s;
+  -o-animation: 0.4s;
 }
 main .sections section a:nth-child(4) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
+  -webkit-animation: 0.6s;
+  -o-animation: 0.6s;
 }
 main .sections section a:nth-child(5) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
+  -webkit-animation: 0.8s;
+  -o-animation: 0.8s;
 }
 main .sections section h5 {
   margin-left: 20px;
@@ -196,15 +190,17 @@ main .sections section #order-button div {
   animation: slideLeft 1s;
   -webkit-animation: slideLeft 1s;
   -o-animation: slideLeft 1s;
+  animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -o-animation-fill-mode: both;
 }
 .card:hover .check-price i {
   display: block;
   -webkit-animation: spin 0.6s ease-in-out;
   animation: spin 0.6s ease-in-out;
+  animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -o-animation-fill-mode: both;
 }
 
 #order-button {
@@ -235,6 +231,23 @@ main .sections section #order-button div {
   -o-animation: clearing 1.5s infinite;
 }
 
+/*animation loader*/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
 @-webkit-keyframes slideDown {
   from {
     transform: translateY(5px);
@@ -245,7 +258,6 @@ main .sections section #order-button div {
     opacity: 1;
   }
 }
-
 @keyframes slideDown {
   from {
     transform: translateY(5px);

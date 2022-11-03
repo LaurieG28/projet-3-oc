@@ -34,26 +34,6 @@ body {
     right: 0;
     bottom: 0;
   }
-
-  /*animation loader*/
-
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  @-webkit-keyframes spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-    }
-  }
 }
 
 #logo {
@@ -122,28 +102,42 @@ main {
         animation: slideDown 1s forwards;
         animation-fill-mode: both;
         background-color: white;
+        -webkit-animation: slideDown 1s forwards;
+        -o-animation: slideDown 1s forwards;
+        -webkit-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
       }
 
       a:hover {
         cursor: pointer;
         box-shadow: 0px 0px 3px 0px $grey;
         animation: shadow 0.1s forwards ease-in;
+        -webkit-animation: shadow 0.1s forwards ease-in;
+        -o-animation: shadow 0.1s forwards ease-in;
       }
 
       a:nth-child(2) {
         animation-delay: 0.2s;
+        -webkit-animation: 0.2s;
+        -o-animation: 0.2s;
       }
 
       a:nth-child(3) {
         animation-delay: 0.4s;
+        -webkit-animation: 0.4s;
+        -o-animation: 0.4s;
       }
 
       a:nth-child(4) {
         animation-delay: 0.6s;
+        -webkit-animation: 0.6s;
+        -o-animation: 0.6s;
       }
 
       a:nth-child(5) {
         animation-delay: 0.8s;
+        -webkit-animation: 0.8s;
+        -o-animation: 0.8s;
       }
 
       h5 {
@@ -236,6 +230,8 @@ main {
     -webkit-animation: slideLeft 1s;
     -o-animation: slideLeft 1s;
     animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
 
     i {
       display: block;
@@ -243,6 +239,8 @@ main {
       -o-animation: spin 0.6s ease-in-out;
       animation: spin 0.6s ease-in-out;
       animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+      -o-animation-fill-mode: both;
     }
   }
 }
@@ -274,6 +272,26 @@ main {
     animation: clearing 1.5s infinite;
     -webkit-animation: clearing 1.5s infinite;
     -o-animation: clearing 1.5s infinite;
+  }
+}
+
+/*animation loader*/
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
   }
 }
 

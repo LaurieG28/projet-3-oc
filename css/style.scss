@@ -225,6 +225,8 @@ body {
         cursor: pointer;
         box-shadow: 0px 0px 3px 0px #94939300;
         animation: shadow 0.3s forwards ease-in;
+        -webkit-animation: shadow 0.3s forwards ease-in;
+        -o-animation: shadow 0.3s forwards ease-in;
       }
 
       .card-image {
