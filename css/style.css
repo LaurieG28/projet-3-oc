@@ -12,9 +12,9 @@ body main h1 {
   font-family: "shrikhand";
 }
 body h4,
-body h5 {
+body h4 {
   border-bottom: 3px solid #99e2d0;
-  width: 11%;
+  width: 40px;
 }
 body #logo {
   width: 100%;
@@ -24,12 +24,12 @@ body #logo {
   box-shadow: 0px -10px 18px 0px;
   display: flex;
   justify-content: center;
-  height: 30px;
-  padding-top: 5px;
+  height: 24px;
+  padding-top: 16px;
   padding-bottom: 10px;
 }
 body #location-bar {
-  margin-top: 45px;
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -50,6 +50,24 @@ body #location-bar #location-name form input {
   border: none;
   background-color: #eaeaea;
   color: black;
+}
+body #location-bar #location-name form input::-moz-placeholder {
+  color: black;
+  font-weight: bold;
+  font-family: "roboto", sans-serif;
+  font-size: 13px;
+}
+body #location-bar #location-name form input:-ms-input-placeholder {
+  color: black;
+  font-weight: bold;
+  font-family: "roboto", sans-serif;
+  font-size: 13px;
+}
+body #location-bar #location-name form input::placeholder {
+  color: black;
+  font-weight: bold;
+  font-family: "roboto", sans-serif;
+  font-size: 13px;
 }
 body .paragraph {
   display: flex;
@@ -90,13 +108,13 @@ body #explorer-button a {
   font-size: medium;
   text-decoration: none;
   line-height: 55px;
+  box-shadow: 0px 0px 6px 0px rgba(121, 113, 119, 0.2392156863);
 }
 body #explorer-button a:hover {
-  background: linear-gradient(#f2e8ff, #fbb3e6);
-  box-shadow: 0px 0px 0px 3px #fbb3e6;
-  animation: clearing 1.5s infinite;
-  -webkit-animation: clearing 1.5s infinite;
-  -o-animation: clearing 1.5s infinite;
+  box-shadow: 0px 0px 6px 0px rgba(121, 113, 119, 0.2392156863);
+  animation: clearing 0.5s forwards;
+  -webkit-animation: clearing 0.5s forwards;
+  -o-animation: clearing 0.5s forwards;
 }
 body section {
   background-color: white;
@@ -116,47 +134,53 @@ body section #card {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-body section .card-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+body section .functioning-card {
+  display: block;
+  text-align: center;
   height: 70px;
-  width: 92%;
   margin: 20px;
   border-block: 1px solid #f6f6f6;
   border-radius: 20px;
   background-color: #f6f6f6;
-  align-items: center;
-}
-body section .card-text figcaption {
-  border: 1px solid #9356dc;
-  height: 20px;
-  width: 20px;
-  text-align: center;
-  border-radius: 20px;
-  background-color: #9356dc;
-  color: white;
-  position: absolute;
-  left: 9px;
-}
-body section .card-text .icon {
-  position: absolute;
-  left: 60px;
-}
-body section .card-text a {
+  position: relative;
+  min-width: 260px;
   text-decoration: none;
   color: black;
+}
+body section .functioning-card .functioning-step {
+  background-color: #9356dc;
+  color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
   position: absolute;
-  left: 92px;
+  left: -10px;
+  top: 25px;
 }
-body section .card-text:hover {
-  background-color: #f2e8ff;
+body section .functioning-card .functioning-text {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  align-items: center;
+  min-width: 290px;
+}
+body section .functioning-card .functioning-text span {
+  width: 180px;
+  position: relative;
+}
+body section .functioning-card .functioning-text span i {
+  position: absolute;
+  left: -25px;
+  top: 2px;
+}
+body section .functioning-card:hover {
   cursor: pointer;
-  animation: pulse 1s forwards;
-  -webkit-animation: pulse 1s forwards;
-  -o-animation: pulse 1s forwards;
+  background-color: #f5edff;
+  animation: pulse 1.5s infinite;
+  -webkit-animation: pulse 1.5s infinite;
+  -o-animation: pulse 1.5s infinite;
 }
-body section .icon:hover {
+body section .functioning-card:hover i {
   color: #9356dc;
 }
 body #restaurants {
@@ -185,10 +209,11 @@ body #restaurants #card-restaurants a .card {
 }
 body #restaurants #card-restaurants .card:hover {
   cursor: pointer;
+  border-radius: 20px;
   box-shadow: 0px 0px 3px 0px rgba(148, 147, 147, 0);
-  animation: shadow 0.3s forwards ease-in;
-  -webkit-animation: shadow 0.3s forwards ease-in;
-  -o-animation: shadow 0.3s forwards ease-in;
+  animation: shadow 0.2s forwards ease-in;
+  -webkit-animation: shadow 0.2s forwards ease-in;
+  -o-animation: shadow 0.2s forwards ease-in;
 }
 body #restaurants #card-restaurants .card-image {
   position: relative;
@@ -255,64 +280,58 @@ footer {
   color: white;
   padding: 20px;
 }
-footer h2 {
+footer h3 {
   font-family: "shrikhand";
-  font-size: 25px;
   margin-top: 0px;
 }
 footer ul {
   padding-left: 0px;
   font-size: small;
 }
-footer ul a {
-  text-decoration: none;
-}
-footer ul a li {
-  color: white;
-  list-style-type: none;
+footer li {
   padding-bottom: 10px;
   font-size: 15px;
+  list-style-type: none;
 }
-footer ul a li i {
+footer li a {
+  text-decoration: none;
+  color: white;
+}
+footer li:hover {
+  font-weight: bolder;
+}
+footer i {
   font-size: 10px;
   width: 18px;
 }
 
 @-webkit-keyframes clearing {
-  from {
-    background: linear-gradient(#f2e8ff, #fbb3e6);
-    box-shadow: 0px 0px 0px 0px #fbb3e6;
-  }
   to {
-    background: linear-gradient(#f2e8ff, #fbb3e6);
-    box-shadow: 0px 0px 3px 10px rgba(242, 232, 255, 0.0117647059);
+    background: linear-gradient(rgba(255, 121, 218, 0.6039215686), rgba(147, 86, 220, 0.6039215686));
+    box-shadow: 0px 0px 8px 0px #797177;
   }
 }
 
 @keyframes clearing {
-  from {
-    background: linear-gradient(#f2e8ff, #fbb3e6);
-    box-shadow: 0px 0px 0px 0px #fbb3e6;
-  }
   to {
-    background: linear-gradient(#f2e8ff, #fbb3e6);
-    box-shadow: 0px 0px 3px 10px rgba(242, 232, 255, 0.0117647059);
+    background: linear-gradient(rgba(255, 121, 218, 0.6039215686), rgba(147, 86, 220, 0.6039215686));
+    box-shadow: 0px 0px 8px 0px #797177;
   }
 }
 @-webkit-keyframes pulse {
   from {
-    box-shadow: 0 0 0 5px #f2e8ff;
+    box-shadow: 0 0 0 5px #f5edff;
   }
   to {
-    box-shadow: 0 0 0 18px #9356dc 0, 0, 0, 0.01;
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
   }
 }
 @keyframes pulse {
   from {
-    box-shadow: 0 0 0 5px #f2e8ff;
+    box-shadow: 0 0 0 5px #f5edff;
   }
   to {
-    box-shadow: 0 0 0 18px #9356dc 0, 0, 0, 0.01;
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
   }
 }
 @-webkit-keyframes hover {
@@ -321,14 +340,14 @@ footer ul a li i {
     -webkit-background-clip: text;
             background-clip: text;
     color: transparent;
-    font-variation-settings: "FILL" 0;
+    font-variation-settings: "FILL" 0, "opsz" 48;
   }
   to {
     background: linear-gradient(283deg, #ff79da 0%, #9356dc 100%);
     -webkit-background-clip: text;
             background-clip: text;
     color: transparent;
-    font-variation-settings: "FILL" 1;
+    font-variation-settings: "FILL" 1, "opsz" 48;
   }
 }
 @keyframes hover {
@@ -337,26 +356,24 @@ footer ul a li i {
     -webkit-background-clip: text;
             background-clip: text;
     color: transparent;
-    font-variation-settings: "FILL" 0;
+    font-variation-settings: "FILL" 0, "opsz" 48;
   }
   to {
     background: linear-gradient(283deg, #ff79da 0%, #9356dc 100%);
     -webkit-background-clip: text;
             background-clip: text;
     color: transparent;
-    font-variation-settings: "FILL" 1;
+    font-variation-settings: "FILL" 1, "opsz" 48;
   }
 }
 @-webkit-keyframes shadow {
   to {
-    border-radius: 20px;
     box-shadow: 0px 0px 9px 0px rgba(53, 53, 53, 0.6392156863);
     color: #9356dc;
   }
 }
 @keyframes shadow {
   to {
-    border-radius: 20px;
     box-shadow: 0px 0px 9px 0px rgba(53, 53, 53, 0.6392156863);
     color: #9356dc;
   }

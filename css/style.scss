@@ -4,8 +4,9 @@ $tertiary: #99e2d0;
 $grey: #eaeaea;
 $grey-dark: #353535;
 $grey-light: #f6f6f6;
-$primary-light: #f2e8ff;
-$secondary-light: #fbb3e6;
+$grey-medium: #cecece;
+$primary-light: #9356dc9a;
+$secondary-light: #ff79da9a;
 $tertiary-light: #a9f3e0;
 $green-dark: #008766;
 
@@ -24,9 +25,9 @@ body {
   }
 
   h4,
-  h5 {
+  h4 {
     border-bottom: 3px solid $tertiary;
-    width: 11%;
+    width: 40px;
   }
 
   #logo {
@@ -37,13 +38,13 @@ body {
     box-shadow: 0px -10px 18px 0px;
     display: flex;
     justify-content: center;
-    height: 30px;
-    padding-top: 5px;
+    height: 24px;
+    padding-top: 16px;
     padding-bottom: 10px;
   }
 
   #location-bar {
-    margin-top: 45px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -66,6 +67,13 @@ body {
           border: none;
           background-color: #eaeaea;
           color: black;
+        }
+
+        input::placeholder {
+          color: black;
+          font-weight: bold;
+          font-family: "roboto", sans-serif;
+          font-size: 13px;
         }
       }
     }
@@ -114,14 +122,14 @@ body {
       font-size: medium;
       text-decoration: none;
       line-height: 55px;
+      box-shadow: 0px 0px 6px 0px #7971773d;
     }
 
     a:hover {
-      background: linear-gradient($primary-light, $secondary-light);
-      box-shadow: 0px 0px 0px 3px $secondary-light;
-      animation: clearing 1.5s infinite;
-      -webkit-animation: clearing 1.5s infinite;
-      -o-animation: clearing 1.5s infinite;
+      box-shadow: 0px 0px 6px 0px #7971773d;
+      animation: clearing 0.5s forwards;
+      -webkit-animation: clearing 0.5s forwards;
+      -o-animation: clearing 0.5s forwards;
     }
   }
 
@@ -146,53 +154,60 @@ body {
       padding-bottom: 10px;
     }
 
-    .card-text {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+    .functioning-card {
+      display: block;
+      text-align: center;
       height: 70px;
-      width: 92%;
       margin: 20px;
       border-block: 1px solid $grey-light;
       border-radius: 20px;
       background-color: $grey-light;
-      align-items: center;
+      position: relative;
+      min-width: 260px;
+      text-decoration: none;
+      color: black;
 
-      figcaption {
-        border: 1px solid $primary;
-        height: 20px;
-        width: 20px;
-        text-align: center;
-        border-radius: 20px;
+      .functioning-step {
         background-color: $primary;
         color: white;
+        height: 20px;
+        width: 20px;
+        border-radius: 50px;
         position: absolute;
-        left: 9px;
+        left: -10px;
+        top: 25px;
       }
 
-      .icon {
-        position: absolute;
-        left: 60px;
-      }
+      .functioning-text {
+        display: flex;
+        justify-content: space-evenly;
+        height: 100%;
+        align-items: center;
+        min-width: 290px;
 
-      a {
-        text-decoration: none;
-        color: black;
-        position: absolute;
-        left: 92px;
+        span {
+          width: 180px;
+          position: relative;
+
+          i {
+            position: absolute;
+            left: -25px;
+            top: 2px;
+          }
+        }
       }
     }
 
-    .card-text:hover {
-      background-color: $primary-light;
+    .functioning-card:hover {
       cursor: pointer;
-      animation: pulse 1s forwards;
-      -webkit-animation: pulse 1s forwards;
-      -o-animation: pulse 1s forwards;
-    }
+      background-color: #f5edff;
+      animation: pulse 1.5s infinite;
+      -webkit-animation: pulse 1.5s infinite;
+      -o-animation: pulse 1.5s infinite;
 
-    .icon:hover {
-      color: $primary;
+      i {
+        color: $primary;
+      }
     }
   }
 
@@ -223,10 +238,11 @@ body {
 
       .card:hover {
         cursor: pointer;
+        border-radius: 20px;
         box-shadow: 0px 0px 3px 0px #94939300;
-        animation: shadow 0.3s forwards ease-in;
-        -webkit-animation: shadow 0.3s forwards ease-in;
-        -o-animation: shadow 0.3s forwards ease-in;
+        animation: shadow 0.2s forwards ease-in;
+        -webkit-animation: shadow 0.2s forwards ease-in;
+        -o-animation: shadow 0.2s forwards ease-in;
       }
 
       .card-image {
@@ -304,77 +320,74 @@ footer {
   color: white;
   padding: 20px;
 
-  h2 {
+  h3 {
     font-family: "shrikhand";
-    font-size: 25px;
     margin-top: 0px;
   }
 
   ul {
     padding-left: 0px;
     font-size: small;
+  }
+
+  li {
+    padding-bottom: 10px;
+    font-size: 15px;
+    list-style-type: none;
 
     a {
       text-decoration: none;
-
-      li {
-        color: white;
-        list-style-type: none;
-        padding-bottom: 10px;
-        font-size: 15px;
-
-        i {
-          font-size: 10px;
-          width: 18px;
-        }
-      }
+      color: white;
     }
+  }
+
+  li:hover {
+    font-weight: bolder;
+  }
+
+  i {
+    font-size: 10px;
+    width: 18px;
   }
 }
 
 // Animations
 
 @keyframes clearing {
-  from {
-    background: linear-gradient($primary-light, $secondary-light);
-    box-shadow: 0px 0px 0px 0px $secondary-light;
-  }
-
   to {
-    background: linear-gradient($primary-light, $secondary-light);
-    box-shadow: 0px 0px 3px 10px #f2e8ff03;
+    background: linear-gradient($secondary-light, $primary-light);
+    box-shadow: 0px 0px 8px 0px #797177;
   }
 }
 
 @keyframes pulse {
   from {
-    box-shadow: 0 0 0 5px $primary-light;
+    box-shadow: 0 0 0 5px #f5edff;
   }
 
   to {
-    box-shadow: 0 0 0 18px $primary(0, 0, 0, 0.01);
+    box-shadow: 0 0 0 10px #00000000;
   }
 }
 
 @keyframes hover {
   from {
-    background: linear-gradient(283deg, #ff79da 0%, #9356dc 100%);
+    background: linear-gradient(283deg, $secondary 0%, $primary 100%);
     background-clip: text;
     color: transparent;
-    font-variation-settings: "FILL" 0;
+    font-variation-settings: "FILL" 0, "opsz" 48;
   }
 
   to {
-    background: linear-gradient(283deg, #ff79da 0%, #9356dc 100%);
+    background: linear-gradient(283deg, $secondary 0%, $primary 100%);
     background-clip: text;
     color: transparent;
-    font-variation-settings: "FILL" 1;
+    font-variation-settings: "FILL" 1, "opsz" 48;
   }
 }
 
 @keyframes shadow {
   to {
-    border-radius: 20px;
     box-shadow: 0px 0px 9px 0px #353535a3;
     color: $primary;
   }

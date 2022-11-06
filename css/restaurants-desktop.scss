@@ -10,18 +10,20 @@ $green-dark: #008766;
 nav {
   #image {
     img {
-      height: 400px;
+      height: 260px;
+      object-fit: cover;
+      object-position: center;
     }
   }
 
-  #image {
-    img:hover {
-      cursor: pointer;
-      animation: expand 0.5s forwards ease-out;
-      -webkit-animation: expand 0.5s forwards ease-out;
-      -o-animation: expand 0.5s forwards ease-out;
-    }
-  }
+  // #image {
+  //   img:hover {
+  //     cursor: pointer;
+  //     animation: expand 0.5s forwards ease-out;
+  //     -webkit-animation: expand 0.5s forwards ease-out;
+  //     -o-animation: expand 0.5s forwards ease-out;
+  //   }
+  // }
 }
 
 main {
@@ -33,11 +35,5 @@ main {
     section {
       width: 33%;
     }
-  }
-}
-
-@keyframes expand {
-  to {
-    height: 600px;
   }
 }

@@ -1,3 +1,11 @@
+nav #image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 260px;
+}
+
 main .sections {
   display: flex;
   flex-direction: row;
@@ -13,4 +21,16 @@ main .sections section #order-button {
   position: relative;
   right: 260px;
   bottom: -30px;
+}
+
+@-webkit-keyframes expand {
+  to {
+    height: 600px;
+  }
+}
+
+@keyframes expand {
+  to {
+    height: 600px;
+  }
 }/*# sourceMappingURL=restaurants-tablet.css.map */

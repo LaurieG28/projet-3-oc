@@ -38,24 +38,7 @@ section #functioning #card {
   display: flex;
   flex-direction: row;
   padding: 10px;
-}
-section #functioning #card .card-text {
-  position: relative;
-  justify-content: center;
-  margin: 30px 10px 30px 10px;
-}
-section #functioning #card .card-text figcaption {
-  position: absolute;
-  left: -11px;
-}
-section #functioning #card .card-text .icon {
-  position: relative;
-  left: -6px;
-  padding-right: 10px;
-}
-section #functioning #card .card-text a {
-  text-decoration: none;
-  position: unset;
+  justify-content: space-evenly;
 }
 section #restaurants {
   padding-top: 0px;
@@ -79,13 +62,4 @@ section #restaurants #card-restaurants .card .text-card {
 }
 section #restaurants #card-restaurants .card-image {
   width: 217px;
-}
-
-footer {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-footer #footer h2 {
-  margin: 0px;
-  text-align: left;
 }/*# sourceMappingURL=desktop.css.map */

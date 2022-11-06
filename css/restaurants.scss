@@ -79,7 +79,7 @@ main {
     }
 
     .material-symbols-outlined {
-      margin-right: 10px;
+      margin-right: 35px;
     }
 
     .material-symbols-outlined:hover {
@@ -99,48 +99,41 @@ main {
       padding: 0px;
 
       a {
-        animation: slideDown 1s forwards;
-        animation-fill-mode: both;
         background-color: white;
+        animation: slideDown 1s forwards;
         -webkit-animation: slideDown 1s forwards;
         -o-animation: slideDown 1s forwards;
+        animation-fill-mode: both;
         -webkit-animation-fill-mode: both;
         -o-animation-fill-mode: both;
-      }
-
-      a:hover {
-        cursor: pointer;
-        box-shadow: 0px 0px 3px 0px $grey;
-        animation: shadow 0.1s forwards ease-in;
-        -webkit-animation: shadow 0.1s forwards ease-in;
-        -o-animation: shadow 0.1s forwards ease-in;
+        animation-iteration-count: 1;
       }
 
       a:nth-child(2) {
         animation-delay: 0.2s;
-        -webkit-animation: 0.2s;
-        -o-animation: 0.2s;
+        -webkit-animation-delay: 0.2s;
+        -o-animation-delay: 0.2s;
       }
 
       a:nth-child(3) {
         animation-delay: 0.4s;
-        -webkit-animation: 0.4s;
-        -o-animation: 0.4s;
+        -webkit-animation-delay: 0.4s;
+        -o-animation-delay: 0.4s;
       }
 
       a:nth-child(4) {
         animation-delay: 0.6s;
-        -webkit-animation: 0.6s;
-        -o-animation: 0.6s;
+        -webkit-animation-delay: 0.6s;
+        -o-animation-delay: 0.6s;
       }
 
       a:nth-child(5) {
         animation-delay: 0.8s;
-        -webkit-animation: 0.8s;
-        -o-animation: 0.8s;
+        -webkit-animation-delay: 0.8s;
+        -o-animation-delay: 0.8s;
       }
 
-      h5 {
+      h4 {
         margin-left: 20px;
         font-weight: unset;
       }
@@ -186,6 +179,8 @@ main {
     overflow: hidden;
 
     p {
+      text-overflow: ellipsis;
+      overflow: hidden;
       margin: 0px;
     }
 
@@ -224,6 +219,9 @@ main {
 }
 
 .card:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 9px 0px #353535a3;
+
   .check-price {
     width: 80px;
     animation: slideLeft 1s;
@@ -262,16 +260,14 @@ main {
     line-height: 60px;
     border: 0px;
     margin-top: 30px;
-    margin-bottom: 40px;
     cursor: pointer;
   }
 
   input:hover {
-    background: linear-gradient($primary-light, $secondary-light);
-    box-shadow: 0px 0px 0px 3px $secondary-light;
-    animation: clearing 1.5s infinite;
-    -webkit-animation: clearing 1.5s infinite;
-    -o-animation: clearing 1.5s infinite;
+    box-shadow: 0px 0px 6px 0px #7971773d;
+    animation: clearing 0.5s forwards;
+    -webkit-animation: clearing 0.5s forwards;
+    -o-animation: clearing 0.5s forwards;
   }
 }
 
@@ -331,20 +327,10 @@ main {
 }
 
 @keyframes shadow {
-  to {
-    box-shadow: 0px 0px 9px 0px $grey-dark;
-    color: $secondary;
-  }
-}
-
-@keyframes clearing {
   from {
-    background: linear-gradient($primary-light, $secondary-light);
-    box-shadow: 0px 0px 0px 0px $secondary-light;
+    box-shadow: 0px 0px 9px 0px #35353533;
   }
-
   to {
-    background: linear-gradient($primary-light, $secondary-light);
-    box-shadow: 0px 0px 3px 10px #f2e8ff03;
+    box-shadow: 0px 0px 9px 0px #353535a3;
   }
 }

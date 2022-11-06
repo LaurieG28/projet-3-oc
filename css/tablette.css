@@ -8,22 +8,9 @@ section #functioning #card {
   display: flex;
   flex-direction: row;
   padding: 10px;
-}
-section #functioning #card .card-text {
-  position: relative;
-  justify-content: center;
-  margin: 20px 10px 20px 10px;
-}
-section #functioning #card .card-text figcaption {
-  position: absolute;
-  left: -11px;
-}
-section #functioning #card .card-text .icon {
-  position: relative;
-  left: -6px;
-}
-section #functioning #card .card-text a {
-  position: unset;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 section #restaurants #card-restaurants {

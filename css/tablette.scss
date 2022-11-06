@@ -17,25 +17,9 @@ section {
       display: flex;
       flex-direction: row;
       padding: 10px;
-
-      .card-text {
-        position: relative;
-        justify-content: center;
-        margin: 20px 10px 20px 10px;
-
-        figcaption {
-          position: absolute;
-          left: -11px;
-        }
-        .icon {
-          position: relative;
-          left: -6px;
-        }
-
-        a {
-          position: unset;
-        }
-      }
+      flex-wrap: wrap;
+      justify-content: space-around;
+      justify-content: space-evenly;
     }
   }
 }

@@ -53,27 +53,7 @@ section {
       display: flex;
       flex-direction: row;
       padding: 10px;
-
-      .card-text {
-        position: relative;
-        justify-content: center;
-        margin: 30px 10px 30px 10px;
-
-        figcaption {
-          position: absolute;
-          left: -11px;
-        }
-        .icon {
-          position: relative;
-          left: -6px;
-          padding-right: 10px;
-        }
-
-        a {
-          text-decoration: none;
-          position: unset;
-        }
-      }
+      justify-content: space-evenly;
     }
   }
 
@@ -103,18 +83,6 @@ section {
       .card-image {
         width: 217px;
       }
-    }
-  }
-}
-
-footer {
-  padding-top: 0px;
-  padding-bottom: 0px;
-
-  #footer {
-    h2 {
-      margin: 0px;
-      text-align: left;
     }
   }
 }
