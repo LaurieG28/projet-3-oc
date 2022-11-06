@@ -156,8 +156,11 @@ body section .functioning-card .functioning-step {
   position: absolute;
   left: -10px;
   top: 25px;
+  font-size: 14px;
+  line-height: 20px;
 }
 body section .functioning-card .functioning-text {
+  font-weight: bold;
   display: flex;
   justify-content: space-evenly;
   height: 100%;
@@ -283,6 +286,7 @@ footer {
 footer h3 {
   font-family: "shrikhand";
   margin-top: 0px;
+  font-weight: normal;
 }
 footer ul {
   padding-left: 0px;

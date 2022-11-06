@@ -178,7 +178,7 @@ main {
     white-space: nowrap;
     overflow: hidden;
 
-    p {
+    > p {
       text-overflow: ellipsis;
       overflow: hidden;
       margin: 0px;
@@ -192,6 +192,7 @@ main {
 
       p {
         font-size: 15px;
+        margin: 0px;
       }
 
       p:nth-child(1) {

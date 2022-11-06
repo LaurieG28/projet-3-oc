@@ -145,7 +145,7 @@ main .sections section #order-button div {
   white-space: nowrap;
   overflow: hidden;
 }
-.card .name-card p {
+.card .name-card > p {
   text-overflow: ellipsis;
   overflow: hidden;
   margin: 0px;
@@ -158,6 +158,7 @@ main .sections section #order-button div {
 }
 .card .name-card .price-card p {
   font-size: 15px;
+  margin: 0px;
 }
 .card .name-card .price-card p:nth-child(1) {
   text-overflow: ellipsis;

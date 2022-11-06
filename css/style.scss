@@ -176,9 +176,12 @@ body {
         position: absolute;
         left: -10px;
         top: 25px;
+        font-size: 14px;
+        line-height: 20px;
       }
 
       .functioning-text {
+        font-weight: bold;
         display: flex;
         justify-content: space-evenly;
         height: 100%;
@@ -323,6 +326,7 @@ footer {
   h3 {
     font-family: "shrikhand";
     margin-top: 0px;
+    font-weight: normal;
   }
 
   ul {
