@@ -265,6 +265,9 @@ body #restaurants #card-restaurants .text-card .restaurants-name {
 body #restaurants #card-restaurants .text-card .restaurants-name p {
   margin: 0px;
 }
+body #restaurants #card-restaurants .text-card .neighborhoods {
+  font-size: 13px;
+}
 body #restaurants #card-restaurants .text-card .material-symbols-outlined {
   position: absolute;
   top: 15px;

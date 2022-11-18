@@ -157,7 +157,7 @@ main .sections section #order-button div {
   flex-wrap: nowrap;
 }
 .card .name-card .price-card p {
-  font-size: 15px;
+  font-size: 13px;
   margin: 0px;
 }
 .card .name-card .price-card p:nth-child(1) {
