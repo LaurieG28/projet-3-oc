@@ -182,6 +182,7 @@ main {
       text-overflow: ellipsis;
       overflow: hidden;
       margin: 0px;
+      font-weight: 700;
     }
 
     .price-card {
@@ -198,6 +199,10 @@ main {
       p:nth-child(1) {
         text-overflow: ellipsis;
         overflow: hidden;
+      }
+
+      .price {
+        font-weight: 700;
       }
     }
   }

@@ -3,6 +3,7 @@
 body {
   margin: 0px;
   font-family: "roboto", sans-serif;
+  font-weight: 300;
   background-color: white;
 }
 body main {
@@ -260,7 +261,7 @@ body #restaurants #card-restaurants .text-card {
   line-height: 20px;
 }
 body #restaurants #card-restaurants .text-card .restaurants-name {
-  font-weight: bold;
+  font-weight: 700;
 }
 body #restaurants #card-restaurants .text-card .restaurants-name p {
   margin: 0px;

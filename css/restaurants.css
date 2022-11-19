@@ -149,6 +149,7 @@ main .sections section #order-button div {
   text-overflow: ellipsis;
   overflow: hidden;
   margin: 0px;
+  font-weight: 700;
 }
 .card .name-card .price-card {
   margin-top: 3px;
@@ -163,6 +164,9 @@ main .sections section #order-button div {
 .card .name-card .price-card p:nth-child(1) {
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.card .name-card .price-card .price {
+  font-weight: 700;
 }
 .card .check-price {
   display: flex;

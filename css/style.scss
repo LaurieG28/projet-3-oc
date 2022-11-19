@@ -14,6 +14,7 @@ $green-dark: #008766;
 body {
   margin: 0px;
   font-family: "roboto", sans-serif;
+  font-weight: 300;
   background-color: white;
 
   main {
@@ -292,7 +293,7 @@ body {
         line-height: 20px;
 
         .restaurants-name {
-          font-weight: bold;
+          font-weight: 700;
 
           p {
             margin: 0px;
